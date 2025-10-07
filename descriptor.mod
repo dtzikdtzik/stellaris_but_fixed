@@ -1,0 +1,10 @@
+version="4.1.4"
+tags={
+	"Balance"
+	"Fixes"
+	"Economy"
+	"Overhaul"
+	"Events"
+}
+name="stellaris_but_fixed"
+supported_version="v4.1.3"

@@ -1,0 +1,316 @@
+#################
+# Campaigns
+# shorter duration, cost energy
+#################
+
+@Edict1Cost = 20
+@Edict2Cost = 25
+@Edict3Cost = 30
+
+@EdictDuration = -1
+
+# Sets the cost for all campaigns with this variable
+@campaignCost = 15
+@hiveFood = 15
+@campaignDuration = -1
+
+
+##########################################################################
+# Rare resource edicts
+##########################################################################
+
+
+fuel_gases = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			exotic_gases = 10 #was 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			exotic_gases = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = exotic_gases amount > 0 }
+			has_edict = fuel_gases
+		}
+		always = no #added
+	}
+
+	modifier = {
+		ship_speed_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+			has_resource = { type = exotic_gases amount > 100 }
+		}
+	}
+}
+
+shield_gases = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			exotic_gases = 10 ##was 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			exotic_gases = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = exotic_gases amount > 0 }
+			has_edict = shield_gases
+		}
+		always = no #added
+	}
+
+	modifier = {
+		ship_shield_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+			has_resource = { type = exotic_gases amount > 100 }
+		}
+	}
+}
+
+
+motes_kinetic = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			volatile_motes = 10 #was 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			volatile_motes = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = volatile_motes amount > 0 }
+			has_edict = motes_kinetic
+		}
+		always = no #added
+	}
+
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			is_at_war = yes
+			has_resource = { type = volatile_motes amount > 100 }
+		}
+	}
+}
+
+motes_explosives = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = ship_edicts
+		cost = {
+			volatile_motes = 10 #was 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			volatile_motes = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = volatile_motes amount > 0 }
+			has_edict = motes_explosives
+		}
+		always = no #added
+	}
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+motes_armor = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			volatile_motes = 10 #was 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			volatile_motes = 1
+			multiplier = value:edict_size_effect
+		}
+		always = no #added
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = volatile_motes amount > 0 }
+			has_edict = motes_armor
+		}
+	}
+
+	modifier = {
+		ship_armor_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+			has_resource = { type = volatile_motes amount > 100 }
+		}
+	}
+}
+
+crystalline_sensors = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			rare_crystals = 5 #was 0.5
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			rare_crystals = 0.5
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = rare_crystals amount > 0 }
+			has_edict = crystalline_sensors
+		}
+	}
+
+	modifier = {
+		ship_sensor_range_add = 1
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+crystal_focus = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+	resources = {
+		category = ship_edicts
+		cost = {
+			rare_crystals = 10 #was 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			rare_crystals = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		OR = {
+			has_resource = { type = rare_crystals amount > 0 }
+			has_edict = crystal_focus
+		}
+		always = no #added
+	}
+
+	modifier = {
+		weapon_type_energy_weapon_damage_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			is_at_war = yes
+			has_resource = { type = rare_crystals amount > 100 }
+		}
+	}
+}
+
+sight_beyond_sight = {
+	length = @EdictDuration
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			sr_zro = 5 #was 0.5
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			sr_zro = 0.5
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	potential = {
+		OR = {
+			has_active_tradition = tr_psionics_mind_readers
+			has_active_tradition = tr_psionics_shroud_finish
+		}
+	}
+
+	modifier = {
+		ship_sensor_range_add = 1
+		ship_windup_mult = -0.15
+		ship_winddown_mult = -0.15
+		ship_jumpdrive_cooldown_mult = -0.15
+		catapult_spread_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
