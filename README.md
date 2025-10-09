@@ -32,3 +32,34 @@ These changes should benefit not only hardcore Grand Admiral players looking for
 While 4.0, according to dev diaries, improved AI, it feels much weaker, and falls off quickly as the game lasts. 
 
 # 4) Some personal pet peeves
+
+
+
+# Changelog
+## General
+- Halved base influence from power projection (2>1)
+
+## AI
+ALL regular AI empires get:
+- Leader lifespan +15 years
+- Leader upkeep -25%
+- Ship and army experience gain +100%
+## Megastructures
+- Arc Furnace resource station modifier progression decreased from 25/50/75/100% to 15/30/40/50% (for furnace levels 1/2/3/4)
+- Arc Furnace level 4 (final level) now requires Mega-Engineering tech
+- Strategic Coordination Center grants an additional +150 fleet command limit
+## Factions / Pop ethics attraction
+- Individualist pops are more politically interested now (happiness penalties from low/very low faction approval increased to -15/-50% happiness from -10/-40%)
+- Reduced ethics attraction from promoting a faction from 100% to 75%
+- Being at high war exhaustion grants +100% pacifist attraction
+## Crime
+- Center of Drug Trade planetary modifier now comes with an additional -5% pop growth
+- Mob Rule planetary modifier comes with an additional -20% governing ethics attraction
+
+
+
+
+
+
+
+
