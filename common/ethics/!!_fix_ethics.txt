@@ -2286,7 +2286,7 @@ ethic_fanatic_pacifist = {
 	country_modifier = {
 		empire_size_pops_mult = -0.30
 		planet_stability_add = 10
-		country_commander_cap_add = -2
+		country_commander_cap_add = -2 ## added by P_P
 		add_attunement_the_cradle_of_souls = @ethic_attunement2
 		the_eater_of_worlds_attunement_mult = -0.35
 	}

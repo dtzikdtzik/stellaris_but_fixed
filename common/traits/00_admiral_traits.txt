@@ -13,7 +13,7 @@ trait_ruler_corvette_focus = {
 		TIER = none
 	}
 	councilor_modifier = {
-		ship_corvette_cost_mult = -0.3
+		ship_corvette_cost_mult = -0.25 # was 0.3, changed for all
 	}
 	leader_potential_add = {
 		has_paragon_dlc = no
@@ -41,7 +41,7 @@ trait_ruler_destroyer_focus = {
 		TIER = none
 	}
 	councilor_modifier = {
-		ship_destroyer_cost_mult = -0.3
+		ship_destroyer_cost_mult = -0.25
 	}
 	leader_potential_add = {
 		has_paragon_dlc = no
@@ -69,7 +69,7 @@ trait_ruler_cruiser_focus = {
 		TIER = none
 	}
 	councilor_modifier = {
-		ship_cruiser_cost_mult = -0.3
+		ship_cruiser_cost_mult = -0.25
 	}
 	leader_potential_add = {
 		has_paragon_dlc = no
@@ -97,7 +97,7 @@ trait_ruler_battleship_focus = {
 		TIER = none
 	}
 	councilor_modifier = {
-		ship_battleship_cost_mult = -0.3
+		ship_battleship_cost_mult = -0.25
 	}
 	leader_potential_add = {
 		has_paragon_dlc = no

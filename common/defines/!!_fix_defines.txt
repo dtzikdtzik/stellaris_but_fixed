@@ -3,6 +3,9 @@
 #		1. EMPIRE SIZE ADJUSTMENT
 #			a) Increase Empire Size from all sources but pops by 50% (100% for systems because it expects whole integers)
 #			b) Decrease Empire Size from pops by 20% because it is ridiculous 
+#		2. THREAT
+#			a) Increase threat from planets and starbases by 25% (threat feels very trivial currently)
+#			b) reduced threat threshold by 10%
 ##########################################################################
 
 
@@ -590,12 +593,12 @@
 		LOGISTICS_FLEET_UPKEEP_DEFAULT = 1.0
 		LOGISTICS_FLEET_UPKEEP_MIN = 0.0
 		LOGISTICS_FLEET_UPKEEP_MAX = 5.0
-		LOGISTICS_FLEET_UPKEEP_INTERVAL = 0.25
+		LOGISTICS_FLEET_UPKEEP_INTERVAL = 0.5
 
 		LOGISTICS_PLANET_DEFICIT_DEFAULT = 1.0
 		LOGISTICS_PLANET_DEFICIT_MIN = 0.0
 		LOGISTICS_PLANET_DEFICIT_MAX = 5.0
-		LOGISTICS_PLANET_DEFICIT_INTERVAL = 0.25
+		LOGISTICS_PLANET_DEFICIT_INTERVAL = 1 ## was 0.25 P_PHOENIX : Assuming this will decrease the frequency at which the game checks the planet's logistics upkeep
 
 		FTL_MAGNET_DISTANCE = 50	# The distance at which ships will warp in when caught by an FTL snare
 
@@ -825,7 +828,7 @@
 
 		WAR_EXHAUSTION_NAVAL_CAP_ADD			= 100
 		WAR_EXHAUSTION_SHIP_KILLED_MULT			= 2.00	# Multiplier of war exhaustion gained from ships
-		WAR_EXHAUSTION_ARMY_KILLED_MULT			= 0.25	# Multiplier of war exhaustion gained from land battles (armies)
+		WAR_EXHAUSTION_ARMY_KILLED_MULT			= 0.3 # was 0.25 #	# Multiplier of war exhaustion gained from land battles (armies)
 		WAR_EXHAUSTION_PLANET_DESTRUCTION_MULT = 5.0		# War exhaustion from planets destroyed
 		WAR_EXHAUSTION_PASSIVE_GAIN_YEARLY		= 0.1		# The amount of yearly war exhaustion gained during war while under WAR_EXHAUSTION_PASSIVE_GAIN_CUTOFF
 		WAR_EXHAUSTION_PASSIVE_WAR_SIZE_DIV		= 0.1
@@ -838,10 +841,10 @@
 
 
 		PLANET_HEALTH_MAX					= 100
-		PLANET_HEALTH_REGEN					= 0.05			# Each day
+		PLANET_HEALTH_REGEN					= 0.03 # was 0.05 #			# Each day
 		PLANET_HEALTH_REGEN_DELAY			= 60		# Days since being bombarded before repairs can be done at full speed
 
-		PLANET_HEALTH_PROTECT_POPS				 = 0.75			# At above this health fraction, pops will not die
+		PLANET_HEALTH_PROTECT_POPS				 = 1 # was 0.75 #			# At above this health fraction, pops will not die
 		PLANET_HEALTH_PROTECT_ARMIES			 = 0.75		# At above this health fraction, defending armies take half damage from bombardment
 		PLANET_HEALTH_INHIBIT_FTL				 = 0.5		# At above this health fraction, planet FTL inhibitors are functional
 		PLANET_HEALTH_INCREASE_ARMY_DAMAGE		 = 0.25		# Below this health fraction, defending armies take double damage from bombardment
@@ -1084,14 +1087,14 @@
 		TECH_WEIGHT_PREVIOUS_OPTION				= 0.5	# If a tech was one of the alternatives last time its weight will be multiplied with TECH_WEIGHT_PREVIOUS_OPTION
 
 		## tradition cost = ( base_cost + ( cost_tradition * num_traditions )^traditions_exponential ) * ( 1 + cost_planet*num_planets + cost_system*num_systems )
-		TRADITION_COST_TRADITION				= 8			# change this value if you want to increase all costs
+		TRADITION_COST_TRADITION				= 10 	## was 8 ## P_PHOENIX: Ascension is too quick, we have all traditions too early			# change this value if you want to increase all costs
 		TRADITION_COST_TRADITION_EXP			= 1.800	# change this value if you want to increase costs at the end
 		TRADITION_COST_MULT_TRADITION_GROUP		= 0.00		# each adopted group adds +X% to total cost
 
 		KEYBOARD_DOUBLE_CLICK_TIME				= 0.5	# Seconds listening to control group double clicks.
 
 		MIN_TRADE_DEAL_LENGTH_YEARS				= 10	# Minimum length of a trade deal in years.
-		MAX_TRADE_DEAL_LENGTH_YEARS				= 30	# Maximum length of a trade deal in years.
+		MAX_TRADE_DEAL_LENGTH_YEARS				= 40	## was 30 ## problematic bc it can be abused 	# Maximum length of a trade deal in years.
 
 		MISSION_PROGRESS_MAX					= 1	# When is a mission finished?
 		NEW_HEIR_CHANCE							= 0.05	# Chance to get a new heir each day. Range is 0 to 1
@@ -1119,7 +1122,7 @@
 		RESEARCH_AGREEMENT_SPEED_MULT			= 0.25	# Research speed increased by this for trade research agreement deal
 
 		MOVE_CAPITAL_INFLUENCE_COST				= 250	# Influence cost to move the empire capital to another planet.
-		MOVE_CAPITAL_COOLDOWN_YEARS			= 10	# Cooldown in years for moving capital.
+		MOVE_CAPITAL_COOLDOWN_YEARS				= 10	# Cooldown in years for moving capital.
 
 		INTEGRATE_SUBJECT_MIN_DAYS				= 3600 # Amount of days the subject has been a subject before we can integrate it
 		SUBJECTS_INTEGRATION_CAP				= 1 # Amount of integrations you're allowed to have at the same time
@@ -1170,7 +1173,7 @@
 		NAVAL_CAPACITY_POP_MULT									= 0		# Mult value of Naval Capacity for each Pop
 		NAVAL_CAPACITY_NO_LEADER_PENALTY						= -0.25
 
-		LEADER_CAPACITY_XP_SCALE								= 0.85	# Leader XP gets multiplied by XP_Scale ^ Number of Leaders over cap. Never hits zero.
+		LEADER_CAPACITY_XP_SCALE								= 0.8 	## P_P: was 0.85		# Leader XP gets multiplied by XP_Scale ^ Number of Leaders over cap. Never hits zero.
 		LEADER_TRAIT_SELECTION_LEVELS = { 1 2 3 4 5 6 7 8 9 10 }
 
 		NAVAL_CAPACITY_BASE_GALACTIC_COMMUNITY					= 400	# Base value of Naval Capacity for the Galactic Defense Force/Imperial Armada
@@ -1203,7 +1206,7 @@
 		# Planetary Ascension cost formula: ( Empire Sprawl * PLANET_ASCENSION_SPRAWL_SCALE) * ( 1 + ( Empire Wide Sum of Ascension Tiers * PLANET_ASCENSION_SUM_SCALE )
 		PLANET_ASCENSION_SPRAWL_SCALE		= 10.0 # Scaling factor for Planetary Ascension cost based on the empire Sprawl
 		PLANET_ASCENSION_SUM_SCALE			= 0.6 # Scaling factor for Planetary Ascension cost based on the empire-wide sum of Ascension Tiers
-		PLANET_ASCENSION_SPRAWL_MODIFIER   = -0.05# Reduction of planet sprawl per level of ascension
+		PLANET_ASCENSION_SPRAWL_MODIFIER   = -0.05 # Reduction of planet sprawl per level of ascension
 
 		# Designation modifier formula: MOD * ( 1 + ( Ascension Tier * PLANET_ASCENSION_MODIFIER_SCALE )
 		PLANET_ASCENSION_MODIFIER_SCALE		= 0.25 # Scaling factor of the designation benefits, multiple instances will sum (first will be 1.25, then 1.50...)
@@ -1238,7 +1241,7 @@
 
 		BASE_ENVOYS_REGULAR_EMPIRE			= 2			# The starting number of envoys for regular empires
 
-		RESOLUTION_VOTE_TIMER = 1440					# number of days a resolution will be on the senate floor before being passed/failed
+		RESOLUTION_VOTE_TIMER = 720 # was 1440			# number of days a resolution will be on the senate floor before being passed/failed
 		RESOLUTION_VOTE_PREMATURE_TIMER = 720			# number of days until the custodian/emperor can prematurely end the senate session
 		SENATE_RECESS_TIMER = 720						# number of days until the next proposed resolution will be put on the floor after the current vote
 		COUNCIL_DIPLOMACY_WEIGHT_MODIFIER = 1.5			# how much a countries diplomatic weight will be increased when voting if on the council
@@ -1800,7 +1803,7 @@
 
 		RANDOM_TARGETING_WEIGHT					= 3.0	# The higher this is, the more random ship targeting will be. Only affects ship's main target
 
-		ADMIRAL_DEATH_CHANCE					= 0.1		# Chance that admiral dies when their ship gets blown up
+		ADMIRAL_DEATH_CHANCE					= 0.15	# was 0.1 #			# Chance that admiral dies when their ship gets blown up
 
 		COMBAT_SHIP_TARGETING_SIZE_MULT			= 0.03	# The higher this weight is, the more likely smaller, more fragile ships are to be targeted first
 		COMBAT_SHIP_TARGETING_SIZE_MAX			= 10
@@ -1949,13 +1952,13 @@
 		EXPANSION_COST_BASE					= 75.0		# The influence base cost of outpost
 		EXPANSION_COST_DISTANCE				= 75.0		# Added per hyperlane jump away
 
-		CLAIM_COST_MAX						= 1000.0	# Maximum cost of a single claim
-		CLAIM_COST_BASE						= 50.0		# The influence base cost of making claims
-		CLAIM_COST_STARBASE					= 25.0		# Added cost for upgraded starbase
-		CLAIM_COST_COLONY					= 25.0		# Added cost for colonized system
-		CLAIM_COST_DISTANCE					= 25.0		# Added per hyperlane jump away
-		CLAIM_COST_MULT_OFFENSIVE_WAR		= 1.0		# Claims are ( 1 + this ) much more expensive to add for attackers in war
-		CLAIM_COST_RIVAL_DISCOUNT			= -0.20		# Claims are ( 1 + this ) much less expensive against rivals
+		CLAIM_COST_MAX						= 1000.0			# Maximum cost of a single claim
+		CLAIM_COST_BASE						= 50.0				# The influence base cost of making claims
+		CLAIM_COST_STARBASE					= 25.0				# Added cost for upgraded starbase
+		CLAIM_COST_COLONY					= 50.0	#was 25		# Added cost for colonized system
+		CLAIM_COST_DISTANCE					= 25.0				# Added per hyperlane jump away
+		CLAIM_COST_MULT_OFFENSIVE_WAR		= 1.0				# Claims are ( 1 + this ) much more expensive to add for attackers in war
+		CLAIM_COST_RIVAL_DISCOUNT			= -0.10	#was -0.2	# Claims are ( 1 + this ) much less expensive against rivals
 
 		COMMERCIAL_PACTS_INCOME_PERCENTAGE = 0.1 # The amount of trade production that is being added to the pact partner's economy
 
@@ -2058,7 +2061,7 @@
 		# If AI is either below -10 amenities or if both stability and amenity target is met
 		AI_PLANET_LOWER_THRESHOLD_AMENITY_CONSTRUCTION = -300 	# AI will try to build new amenity buildings if below this amenity target
 		# Both requirements need to be fulfilled
-		AI_PLANET_UPPER_THRESHOLD_AMENITY_CONSTRUCTION = 0 	# AI will try to build new amenity buildings if below this amenity target
+		AI_PLANET_UPPER_THRESHOLD_AMENITY_CONSTRUCTION = 0 		# AI will try to build new amenity buildings if below this amenity target
 		AI_PLANET_STABILITY_THRESHOLD_AMENITY_CONSTRUCTION = 50 # AI will try to build new amenity buildings if below this stability target
 
 		AI_DISTRICT_MAX_OPPORTUNITY_COST_FACTOR			= 0.3	# With only one District cap left, the AI will subtract the second best choice times this number from the
@@ -2154,7 +2157,7 @@
 
 		AI_NO_RETREAT_LIMIT = 3						# At fewer owner/controlled planets than this, the AI will fight to the death in their home systems
 
-		CRISIS_THREAT_THRESHOLD_UPPER = 100			# At this crisis threat, AI drops other priorities and focuses on fighting the crisis
+		CRISIS_THREAT_THRESHOLD_UPPER = 90 # was 100 #		# At this crisis threat, AI drops other priorities and focuses on fighting the crisis
 		CRISIS_THREAT_THRESHOLD_LOWER = 10			# Below this threshold, AI stops focusing on crisis fighting
 
 		CRISIS_MILITARY_POWER_MULT_DEFAULT = 1.5		# AI willing to engage crisis factions at these odds normally
@@ -2219,11 +2222,11 @@
 
 		BROKEN_TRADE_DEAL_FACTOR = 0.5				# How much does broken trade deal affect opinion (based on value of deal)
 
-		THREAT_PLANET_MULT = 8.0					# Base threat multiplier for planet
-		THREAT_STARBASE_MULT = 4.0					# Base threat multiplier for system with upgraded starbase
+		THREAT_PLANET_MULT = 10.0	# was 8			# Base threat multiplier for planet
+		THREAT_STARBASE_MULT = 5.0	# was 4			# Base threat multiplier for system with upgraded starbase
 		THREAT_SYSTEM_MULT = 2.0					# Base threat multiplier for system
 
-		HIGH_THREAT_THRESHOLD = 50					# Must have at least this much threat to become fearful
+		HIGH_THREAT_THRESHOLD = 45 # was 50			# Must have at least this much threat to become fearful
 		SHARED_THREAT_MULT = 0.5					# How much does having a shared threat boost opinion?
 		THREAT_SHARED_THREAT_REDUCTION = 4			# Each point of threat will also eliminate this much shared threat
 		SHARED_THREAT_MAX = 200
