@@ -11,7 +11,10 @@ Three Design Intentions:
 Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head, while still solving or mitigating the issues.
 **Direct economic changes include:**
 1. Significantly weakening basic resource production modifiers by a) scaling down the +20% techs, b) decreasing the effects of the basic resource edicts and c) decreasing the effects of the purification buildings. They're still viable! In fact, I suspect they're still very powerfuL!
-2. Nerfing the potential of Arc Furnaces.
+2. Nerfed Arc Furnaces.
+3. Minor increase to tradition costs
+4. Nerfed Hydroponics, Solar Panels, Trade Hubs
+5. Reduced Starbase cap
 **More subtle economic downscaling includes:**
 1. Making wars more destructive to pops. Bombardment is significantly more lethal to populations. Collateral damage from armies is slightly increased. 
 
