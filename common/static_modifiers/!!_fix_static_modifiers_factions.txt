@@ -3,6 +3,7 @@
 ## CHANGES: 
 # 		1. Slightly increased penalties for low approval
 #		2. Slightly nerfed ethics promotion
+#       3. Added leader upkeep increase to ethics promotion. Imagine the leaders have to do your propaganda
 ##########################################################################
 
 
@@ -53,7 +54,8 @@ suppressed_xenophobe = {
 }
 
 promoted_xenophobe = {
-	pop_ethic_xenophobe_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_xenophobe_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }
 
 suppressed_xenophile = {
@@ -61,7 +63,8 @@ suppressed_xenophile = {
 }
 
 promoted_xenophile = {
-	pop_ethic_xenophile_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_xenophile_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }
 
 suppressed_spiritualist = {
@@ -69,7 +72,8 @@ suppressed_spiritualist = {
 }
 
 promoted_spiritualist = {
-	pop_ethic_spiritualist_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_spiritualist_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }
 
 suppressed_materialist = {
@@ -77,7 +81,8 @@ suppressed_materialist = {
 }
 
 promoted_materialist = {
-	pop_ethic_materialist_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_materialist_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }
 
 suppressed_pacifist = {
@@ -85,7 +90,8 @@ suppressed_pacifist = {
 }
 
 promoted_pacifist = {
-	pop_ethic_pacifist_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_pacifist_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }
 
 suppressed_militarist = {
@@ -93,7 +99,8 @@ suppressed_militarist = {
 }
 
 promoted_militarist = {
-	pop_ethic_militarist_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_militarist_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }
 
 suppressed_egalitarian = {
@@ -101,7 +108,8 @@ suppressed_egalitarian = {
 }
 
 promoted_egalitarian = {
-	pop_ethic_egalitarian_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_egalitarian_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }
 
 suppressed_authoritarian = {
@@ -109,5 +117,6 @@ suppressed_authoritarian = {
 }
 
 promoted_authoritarian = {
-	pop_ethic_authoritarian_attraction_mult = 0.75 # was 1 ## promoting ethics is weird, you obviously just promote factions you're happy with
+	pop_ethic_authoritarian_attraction_mult = 0.75 # was 1 
+	leaders_upkeep_mult = 0.05
 }

@@ -48,22 +48,17 @@ playable_ai_empire = {
 	diplomacy_upkeep_mult = -0.5
 	ship_archaeological_site_excavation_speed_mult = -0.50
 ###### P_PHOENIX AI GIFT BASKET ##############
-	leader_lifespan_add = 15
-	leaders_upkeep_mult = -0.25
 	planet_districts_upkeep_mult = -0.2
 	planet_buildings_upkeep_mult = -0.2
 	megastructures_upkeep_mult = -0.25
 
-	negative_traits_country = -0,5 ## does this reduce likelihood by 50%?? or max nr of negative traits on a leader by half a trait? can't hurt either way
+	negative_traits_country = -1 ## does this reduce likelihood by 50%?? or max nr of negative traits on a leader by half a trait? can't hurt either way
 
 	empire_size_mult = -0.2
 
 	habitability_floor_add = 0.4 # I think this makes their minimum habitability 40%? they probably don't voluntarily colonize that low, but this may mitigate damage in some freak scenarios
 
 	district_automated_workforce = 0.1
-
-	planetary_ascension_cost_mult = -0.33 # i dislike planetary ascension but for boosting the AI it is kinda perfect actually
-	planetary_ascension_effect_mult = 0.15
 
 	councilor_exp_gain = 0.2
 	army_experience_gain_mult = 1 #exp is minor anyway, but AI generally has bigger casualty rates, so if they want to benefit from it...
@@ -153,6 +148,10 @@ difficulty_grand_admiral = {
 	planet_resettlement_unemployed_mult = 1.0
 	planet_resettlement_unemployed_destination_mult = 1.0
 	difficulty_modifier_mult = 1.0 # Only active with Difficulty Adjusted AI Modifiers setting
+	leader_lifespan_add = 20 # added, P_Phoenix
+	leaders_upkeep_mult = -0.4 # ""
+	planetary_ascension_cost_mult = -0.4 # i dislike planetary ascension but for boosting the AI it is kinda perfect actually
+	planetary_ascension_effect_mult = 0.2 # ""
 }
 
 difficulty_admiral = {
@@ -171,6 +170,10 @@ difficulty_admiral = {
 	planet_resettlement_unemployed_mult = 0.75
 	planet_resettlement_unemployed_destination_mult = 0.75
 	difficulty_modifier_mult = 0.75 # Only active with Difficulty Adjusted AI Modifiers setting
+	leader_lifespan_add = 15 # added, P_Phoenix
+	leaders_upkeep_mult = -0.3 # ""
+	planetary_ascension_cost_mult = -0.3 # i dislike planetary ascension but for boosting the AI it is kinda perfect actually
+	planetary_ascension_effect_mult = 0.15 # ""
 }
 
 difficulty_commodore = {
@@ -189,6 +192,10 @@ difficulty_commodore = {
 	planet_resettlement_unemployed_mult = 0.50
 	planet_resettlement_unemployed_destination_mult = 0.50
 	difficulty_modifier_mult = 0.5 # Only active with Difficulty Adjusted AI Modifiers setting
+	leader_lifespan_add = 10 # added, P_Phoenix
+	leaders_upkeep_mult = -0.2 # ""
+	planetary_ascension_cost_mult = -0.2 # i dislike planetary ascension but for boosting the AI it is kinda perfect actually
+	planetary_ascension_effect_mult = 0.1 # ""
 }
 
 difficulty_captain = {
@@ -207,6 +214,10 @@ difficulty_captain = {
 	planet_resettlement_unemployed_mult = 0.25
 	planet_resettlement_unemployed_destination_mult = 0.25
 	difficulty_modifier_mult = 0.25 # Only active with Difficulty Adjusted AI Modifiers setting
+	leader_lifespan_add = 5 # added, P_Phoenix
+	leaders_upkeep_mult = -0.1 # ""
+	planetary_ascension_cost_mult = -0.1 # i dislike planetary ascension but for boosting the AI it is kinda perfect actually
+	planetary_ascension_effect_mult = 0.05 # ""
 }
 
 difficulty_ensign = {

@@ -41,7 +41,7 @@
 
 @corvette_hp = 200
 @corvette_evasion = 60
-@corvette_build_time = 60
+@corvette_build_time = 90 # was 60
 
 @corvette_upkeep_energy = 0.3
 @corvette_upkeep_alloys = 0.1
@@ -55,7 +55,7 @@
 
 @frigate_hp = 400
 @frigate_evasion = 20
-@frigate_build_time = 90
+@frigate_build_time = 120 # was 90
 
 ##################
 # DESTROYER
@@ -66,7 +66,7 @@
 
 @destroyer_hp = 600
 @destroyer_evasion = 35
-@destroyer_build_time = 120
+@destroyer_build_time = 180 # was 120
 
 @destroyer_upkeep_energy = 0.6
 @destroyer_upkeep_alloys = 0.2
@@ -83,7 +83,7 @@
 
 @cruiser_hp = 1800
 @cruiser_evasion = 10
-@cruiser_build_time = 240
+@cruiser_build_time = 360 # was 240
 
 @cruiser_upkeep_energy = 1.2
 @cruiser_upkeep_alloys = 0.4
@@ -100,7 +100,7 @@
 
 @battleship_hp = 3000
 @battleship_evasion = 5
-@battleship_build_time = 480
+@battleship_build_time = 720 # was 480
 
 @battleship_upkeep_energy = 2.4
 @battleship_upkeep_alloys = 0.8
@@ -116,7 +116,7 @@
 
 @titan_hp = 15000
 @titan_evasion = 5
-@titan_build_time = 1800
+@titan_build_time = 2400 # was 1800
 
 @titan_upkeep_energy = 4.8
 @titan_upkeep_alloys = 1.6
@@ -132,7 +132,7 @@
 
 @colossus_hp = 30000
 @colossus_evasion = 2
-@colossus_build_time = 3600
+@colossus_build_time = 5400 # was 3600
 
 @colossus_upkeep_energy = 30
 @colossus_upkeep_alloys = 10
@@ -148,7 +148,7 @@
 
 @juggernaut_hp = 100000
 @juggernaut_evasion = 2
-@juggernaut_build_time = 3600
+@juggernaut_build_time = 5400 # was 3600
 
 @juggernaut_upkeep_energy = 30
 @juggernaut_upkeep_alloys = 10
@@ -250,8 +250,8 @@
 @mauler_stage_1_collision_radius = 2.0
 @mauler_stage_1_hp = 300
 @mauler_stage_1_evasion = 40
-@mauler_stage_1_build_time = 75
-@mauler_stage_1_section_cost = 30		    # Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@mauler_stage_1_build_time = 112 # was 75
+@mauler_stage_1_section_cost = 45 # was 30		    # Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @mauler_stage_1_upkeep_alloys = 0.1
 @mauler_stage_1_upkeep_food = 0.3
 @mauler_stage_1_upkeep_logistic = 0.1
@@ -261,8 +261,8 @@
 @mauler_stage_2_collision_radius = 2.5
 @mauler_stage_2_hp = 450
 @mauler_stage_2_evasion = 30
-@mauler_stage_2_build_time = 150
-@mauler_stage_2_section_cost = 60   		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@mauler_stage_2_build_time = 225 # was 150
+@mauler_stage_2_section_cost = 90 #was 60   		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @mauler_stage_2_upkeep_alloys = 0.2
 @mauler_stage_2_upkeep_food = 0.6
 @mauler_stage_2_upkeep_logistic = 0.2
@@ -272,8 +272,8 @@
 @mauler_stage_3_collision_radius = 3.0
 @mauler_stage_3_hp = 600
 @mauler_stage_3_evasion = 20
-@mauler_stage_3_build_time = 300
-@mauler_stage_3_section_cost = 120  		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@mauler_stage_3_build_time = 450 # was 300
+@mauler_stage_3_section_cost = 180 #was 120 		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @mauler_stage_3_upkeep_alloys = 0.4
 @mauler_stage_3_upkeep_food = 1.2
 @mauler_stage_3_upkeep_logistic = 0.4
@@ -289,8 +289,8 @@
 @weaver_stage_1_collision_radius = 2.0
 @weaver_stage_1_hp = 600
 @weaver_stage_1_evasion = 35
-@weaver_stage_1_build_time = 120
-@weaver_stage_1_section_cost = 60			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@weaver_stage_1_build_time = 180 # was 120
+@weaver_stage_1_section_cost = 90 # was 60			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @weaver_stage_1_upkeep_alloys = 0.2
 @weaver_stage_1_upkeep_food = 0.6
 @weaver_stage_1_upkeep_logistic = 0.2
@@ -300,8 +300,8 @@
 @weaver_stage_2_collision_radius = 2.5
 @weaver_stage_2_hp = 900
 @weaver_stage_2_evasion = 35
-@weaver_stage_2_build_time = 240
-@weaver_stage_2_section_cost = 120			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@weaver_stage_2_build_time = 360 # was 240
+@weaver_stage_2_section_cost = 180 # was 120			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @weaver_stage_2_upkeep_alloys = 0.4
 @weaver_stage_2_upkeep_food = 1.2
 @weaver_stage_2_upkeep_logistic = 0.4
@@ -311,8 +311,8 @@
 @weaver_stage_3_collision_radius = 3.0
 @weaver_stage_3_hp = 1200
 @weaver_stage_3_evasion = 20
-@weaver_stage_3_build_time = 480
-@weaver_stage_3_section_cost = 240			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@weaver_stage_3_build_time = 720 # was 480
+@weaver_stage_3_section_cost = 360	# was 240		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @weaver_stage_3_upkeep_alloys = 0.8
 @weaver_stage_3_upkeep_food = 2.4
 @weaver_stage_3_upkeep_logistic = 0.8
@@ -329,8 +329,8 @@
 @harbinger_stage_1_hp = 1800
 @harbinger_stage_1_evasion = 10
 @harbinger_stage_1_piracy_suppression = 8
-@harbinger_stage_1_build_time = 240
-@harbinger_stage_1_section_cost = 120		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@harbinger_stage_1_build_time = 360 # was 240
+@harbinger_stage_1_section_cost = 180 #was 120		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @harbinger_stage_1_upkeep_alloys = 0.4
 @harbinger_stage_1_upkeep_food = 1.2
 @harbinger_stage_1_upkeep_logistic = 0.4
@@ -341,8 +341,8 @@
 @harbinger_stage_2_hp = 2700
 @harbinger_stage_2_evasion = 10
 @harbinger_stage_2_piracy_suppression = 6
-@harbinger_stage_2_build_time = 480
-@harbinger_stage_2_section_cost = 240		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@harbinger_stage_2_build_time = 720 # was 480
+@harbinger_stage_2_section_cost = 360	#was 240		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @harbinger_stage_2_upkeep_alloys = 0.8
 @harbinger_stage_2_upkeep_food = 2.4
 @harbinger_stage_2_upkeep_logistic = 0.8
@@ -353,8 +353,8 @@
 @harbinger_stage_3_hp = 3600
 @harbinger_stage_3_evasion = 5
 @harbinger_stage_3_piracy_suppression = 4
-@harbinger_stage_3_build_time = 960
-@harbinger_stage_3_section_cost = 480		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@harbinger_stage_3_build_time = 1440 # was 960
+@harbinger_stage_3_section_cost = 720 # was 480		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @harbinger_stage_3_upkeep_alloys = 1.6
 @harbinger_stage_3_upkeep_food = 4.8
 @harbinger_stage_3_upkeep_logistic = 1.6
@@ -371,8 +371,8 @@
 @stinger_stage_1_hp = 3000
 @stinger_stage_1_evasion = 10
 @stinger_stage_1_piracy_suppression = 6
-@stinger_stage_1_build_time = 480
-@stinger_stage_1_section_cost = 240			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@stinger_stage_1_build_time = 720 # was 480
+@stinger_stage_1_section_cost = 360	#was 240		# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @stinger_stage_1_upkeep_alloys = 0.8
 @stinger_stage_1_upkeep_food = 2.4
 @stinger_stage_1_upkeep_logistic = 0.8
@@ -383,8 +383,8 @@
 @stinger_stage_2_hp = 4500
 @stinger_stage_2_evasion = 10
 @stinger_stage_2_piracy_suppression = 4
-@stinger_stage_2_build_time = 960
-@stinger_stage_2_section_cost = 480			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@stinger_stage_2_build_time = 1440 # was 960
+@stinger_stage_2_section_cost = 720		#was 480	# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @stinger_stage_2_upkeep_alloys = 1.6
 @stinger_stage_2_upkeep_food = 4.8
 @stinger_stage_2_upkeep_logistic = 1.6
@@ -395,8 +395,8 @@
 @stinger_stage_3_hp = 6000
 @stinger_stage_3_evasion = 5
 @stinger_stage_3_piracy_suppression = 2
-@stinger_stage_3_build_time = 1920
-@stinger_stage_3_section_cost = 960			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
+@stinger_stage_3_build_time = 2880 # was 1920
+@stinger_stage_3_section_cost = 1440	#was 960			# Cost in alloys, this is converted to food by @alloy_to_food_cost_ratio
 @stinger_stage_3_upkeep_alloys = 3.2
 @stinger_stage_3_upkeep_food = 9.6
 @stinger_stage_3_upkeep_logistic = 3.2
