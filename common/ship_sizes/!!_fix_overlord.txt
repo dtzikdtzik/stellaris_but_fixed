@@ -72,7 +72,7 @@ offspring_corvette = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 30
+			alloys = 45 # was 30
 		}
 		upkeep = {
 			energy = @corvette_upkeep_energy
@@ -159,7 +159,7 @@ offspring_destroyer = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 60
+			alloys = 90 # was 60
 		}
 		upkeep = {
 			energy = @destroyer_upkeep_energy
@@ -250,7 +250,7 @@ offspring_cruiser = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 120
+			alloys = 180 # was 120
 		}
 		upkeep = {
 			energy = @cruiser_upkeep_energy
@@ -320,7 +320,7 @@ offspring_battleship = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 240
+			alloys = 360 # was 240
 		}
 		upkeep = {
 			energy = @battleship_upkeep_energy

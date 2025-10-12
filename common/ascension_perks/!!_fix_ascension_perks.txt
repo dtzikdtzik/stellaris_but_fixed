@@ -30,6 +30,19 @@ ap_defender_of_the_galaxy = {
 		add_attunement_the_cradle_of_souls = @ascension_perk_attunement1
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			ship_fire_rate_mult = 0.10
+			country_naval_cap_add = 0.10
+			damage_vs_player_crisis_mult = 0.25
+		}
+	}
+
 	on_enabled = {
 		custom_tooltip = "ap_defender_of_the_galaxy_effect_opinion"
 		# see triggered_opinion_ap_defender_of_the_galaxy
@@ -63,6 +76,7 @@ ap_defender_of_the_galaxy = {
 			damage_vs_country_type_frenzied_voidworms_mult = @ap_defender_of_the_galaxy_voidworm_dmg_mult
 		    add_attunement_the_cradle_of_souls = @ascension_perk_attunement1
 		}
+		
 
 		on_enabled = {
 			custom_tooltip = "ap_defender_of_the_galaxy_effect_opinion"
@@ -73,6 +87,7 @@ ap_defender_of_the_galaxy = {
 			factor = 1
 		}
 	}
+
 
 	potential = {
 		OR = {
@@ -593,6 +608,20 @@ ap_lord_of_war = {
 		#Bonus to dividends frequency handled in the dividends situation.
 	}
 
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			ship_fire_rate_mult = 0.10
+			ships_upkeep_mult = -0.10
+			country_trade_produces_mult = 0.10			
+		}
+	}
+
 	ai_weight = {
 		factor = 5
 		modifier = {
@@ -665,6 +694,18 @@ ap_hydrocentric = {
 		add_attunement_the_composer_of_strands = @ascension_perk_attunement1
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.15
+			country_unity_produces_mult = 0.15		
+		}
+	}
+
 	ai_weight = {
 		factor = 80 #it really is quite good for Aquatic species
 		modifier = {
@@ -712,6 +753,18 @@ ap_enigmatic_engineering = {
 		add_attunement_the_cradle_of_souls = @ascension_perk_attunement1
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_scientist_cap_add = 2
+			country_engineering_research_produces_mult = 0.3	
+		}
+	}
+
 	tradition_swap = {
 		name = ap_enigmatic_engineering_cloaking
 		inherit_effects = no
@@ -733,6 +786,7 @@ ap_enigmatic_engineering = {
 		weight = {
 			factor = 1
 		}
+
 	}
 
 	ai_weight = {
@@ -769,6 +823,18 @@ ap_nihilistic_acquisition = {
 
 	on_enabled = {
 		custom_tooltip = "allow_raiding"
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			ship_orbital_bombardment_mult = 0.5
+			pop_cat_slave_bonus_workforce_mult = 0.25
+		}
 	}
 
 	possible = {
@@ -825,6 +891,19 @@ ap_colossus = {
 		country_war_exhaustion_mult = -0.15
 		ships_upkeep_mult = -0.05
 		add_attunement_the_eater_of_worlds = @ascension_perk_attunement1
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_naval_cap_mult = 0.2
+			army_damage_mult = 0.5
+			ship_orbital_bombardment_mult = 0.5	
+		}
 	}
 
 	ai_weight = {
@@ -910,6 +989,20 @@ ap_world_shaper = {
 		}
 	}
 
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			terraforming_cost_mult = -0.5
+			terraform_speed_mult = 0.5
+			pop_environment_tolerance = 0.1
+		}
+	}
+
 	ai_weight = {
 		factor = 5
 		modifier = {
@@ -956,6 +1049,18 @@ ap_galactic_force_projection = {
 		country_naval_cap_add = 100
 		command_limit_add = 100
 		add_attunement_the_eater_of_worlds = @ascension_perk_attunement1
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			shipclass_military_build_speed_mult = 0.3
+			ships_upkeep_mult = -0.15
+		}
 	}
 
 	potential = {
@@ -1016,6 +1121,18 @@ ap_interstellar_dominion = {
 		add_attunement_the_eater_of_worlds = @ascension_perk_attunement1
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_influence_produces_mult = 0.5
+			empire_size_mult = -0.2
+		}
+	}
+
 	potential = {
 		NOT = {
 			has_ascension_perk = ap_interstellar_dominion
@@ -1064,6 +1181,19 @@ ap_grasp_the_void = {
 	modifier = {
 		country_starbase_capacity_add = 5
 		add_attunement_the_composer_of_strands = @ascension_perk_attunement1
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			starbase_upgrade_cost_mult = -0.5
+			starbase_upgrade_speed_mult = 1
+			stations_upkeep_mult = -0.5
+		}
 	}
 
 	potential = {
@@ -1128,15 +1258,14 @@ ap_eternal_vigilance = {
 			has_ascension_perk = ap_eternal_vigilance
 		}
 	}
-
+### AI LATEGAME PATCH
 	triggered_modifier = {
 		potential = {
 			is_ai = yes
 		}
 		### "a generous gift for the AI, to apologize for their loss of the eternal vigilance policy" – P_Phoenix
 		modifier = {
-			country_starbase_capacity_add = 2
-			starbase_defense_platform_capacity_add = 4
+			starbase_defense_platform_capacity_add = 8
 			shipclass_military_station_build_cost_mult = -0.5
 			ship_military_station_small_upkeep_mult = -0.5
 		}
@@ -1176,6 +1305,19 @@ ap_galactic_contender = {
 		damage_vs_country_type_awakened_fallen_empire_mult = @ap_galactic_contender_dmg_mult
 		damage_vs_country_type_gate_builders_mult = @ap_galactic_contender_dmg_mult
 		add_attunement_the_cradle_of_souls = @ascension_perk_attunement1
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			force_disparity_fire_rate_mult = 0.5
+			country_war_exhaustion_mult = -0.2
+			ship_speed_mult = 0.2
+		}
 	}
 
 	tradition_swap = {
@@ -1245,6 +1387,18 @@ ap_technological_ascendancy = {
 		rare_tech_draw_chance_mult = 0.5
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			researcher_jobs_bonus_workforce_mult = 0.25
+			scientist_initial_skill = 2
+		}
+	}
+
 	custom_tooltip_with_modifiers = ap_technological_ascendancy_tt
 
 	potential = {
@@ -1284,6 +1438,18 @@ ap_one_vision = {
 			is_wilderness_empire = yes
 		}
 		planetary_ascension_cost_mult = -0.10
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			planet_stability_add = 5
+			planet_pops_upkeep_mult = -0.2
+		}
 	}
 
 	potential = {
@@ -1334,6 +1500,18 @@ ap_consecrated_worlds = {
 		add_attunement_the_composer_of_strands = @ascension_perk_attunement1
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_unity_produces_mult = 0.2
+			pop_amenities_usage_mult = -0.15
+		}
+	}
+
 	ai_weight = {
 		factor = 10
 	}
@@ -1346,6 +1524,19 @@ ap_mastery_of_nature = {
 	modifier = {
 		deposit_blockers_cost_mult = -0.33
 		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			planet_clear_blocker_speed_mult = 1
+			pop_environment_tolerance = 0.2
+			building_time_mult = -0.3
+		}
 	}
 
 	potential = {
@@ -1399,6 +1590,19 @@ ap_imperial_prerogative = {
 		is_megacorp = no
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			leaders_upkeep_mult = -0.5
+			official_initial_skill = 2
+			empire_size_mult = -0.2
+		}
+	}
+
 	ai_weight = {
 		factor = 15
 		modifier = {
@@ -1431,6 +1635,18 @@ ap_executive_vigor = {
 		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
 	}
 
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			edicts_upkeep_mult = -0.25
+			leaders_upkeep_mult = -0.25
+		}
+	}
+
 	potential = {
 		NOT = {
 			has_ascension_perk = ap_executive_vigor
@@ -1447,6 +1663,18 @@ ap_transcendent_learning = {
 		country_scientist_cap_add = 2
 		species_leader_exp_gain = 0.25
 		leaders_upkeep_mult = -0.15
+	}
+
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			leader_lifespan_add = 25
+			councilor_exp_gain = 0.5
+		}
 	}
 
 	potential = {
@@ -1472,6 +1700,18 @@ ap_shared_destiny = {
 		specialist_subject_conversion_time_mult = -0.2
 		envoys_add = 2
 		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
+	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_trust_cap_add = 20
+			country_trust_growth = 0.5
+			country_influence_produces_mult = 0.5
+		}
 	}
 
 	potential = {
@@ -1541,6 +1781,18 @@ ap_voidborn = {
 		habitat_districts_minor_add = 0.25
 		habitat_district_jobs_mult = 0.5
 	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			megastructure_build_speed_mult = 0.25
+			megastructures_upkeep_mult = -0.25
+			country_alloys_produces_mult = 0.05
+		}
+	}
 
 	ai_weight = {
 		base = 10
@@ -1585,6 +1837,17 @@ ap_master_builders = {
 	modifier = {
 		megastructure_build_speed_mult = 0.5
 		country_megastructure_build_cap_add = 1
+	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			megastructures_upkeep_mult = -0.5
+			country_alloys_produces_mult = 0.05
+		}
 	}
 
 	potential = {
@@ -1653,6 +1916,17 @@ ap_galactic_wonders_utopia = {
 			has_ascension_perk = ap_galactic_wonders_utopia
 		}
 	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_alloys_produces_mult = 0.05
+			megastructure_build_speed_mult = 0.75
+		}
+	}
 
 	ai_weight = {
 		factor = 20
@@ -1701,6 +1975,17 @@ ap_galactic_wonders_megacorp = {
 		NOR = {
 			host_has_dlc = "Utopia"
 			has_ascension_perk = ap_galactic_wonders_megacorp
+		}
+	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_alloys_produces_mult = 0.05
+			megastructure_build_speed_mult = 0.75
 		}
 	}
 
@@ -1769,6 +2054,17 @@ ap_galactic_wonders_utopia_and_megacorp = {
 			has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
 		}
 	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_alloys_produces_mult = 0.05
+			megastructure_build_speed_mult = 0.75
+		}
+	}
 
 	ai_weight = {
 		factor = 20
@@ -1833,6 +2129,18 @@ ap_machine_worlds = {
 	modifier = {
 		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
 	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 
 	ai_weight = {
 		factor = 100
@@ -1876,6 +2184,18 @@ ap_hive_worlds = {
 	modifier = {
 		add_attunement_the_composer_of_strands = @ascension_perk_attunement1
 	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 
 	ai_weight = {
 		factor = 100
@@ -1918,6 +2238,18 @@ ap_arcology_project = {
 	modifier = {
 		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
 	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 
 	ai_weight = {
 		factor = 10
@@ -1953,6 +2285,16 @@ ap_xeno_compatibility = {
 	modifier = {
 		planet_resettlement_unemployed_destination_mult = 0.33
 		add_attunement_the_composer_of_strands = @ascension_perk_attunement1
+	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			logistic_growth_mult = 0.25
+		}
 	}
 
 	possible = {
@@ -2009,6 +2351,18 @@ ap_universal_transactions = {
 		planet_branch_offices_cost_mult = -0.15
 		add_attunement_the_instrument_of_desire = @ascension_perk_attunement1
 	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			country_trade_produces_mult = 0.10
+			branch_office_value_mult = 0.25
+			envoys_add = 2
+		}
+	}
 
 	on_enabled = {
 		custom_tooltip = "free_commercial_pacts"
@@ -2044,6 +2398,18 @@ ap_detox = {
 
 	modifier = {
 		add_attunement_the_composer_of_strands = @ascension_perk_attunement1
+	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			terraform_speed_mult = 1
+			terraforming_cost_mult = -0.5
+			pop_environment_tolerance = 0.2
+		}
 	}
 
 	ai_weight = {
@@ -2084,6 +2450,17 @@ ap_mechromancy = {
 		x_slot_weapon_damage_mult = 0.15
 		t_slot_weapon_damage_mult = 0.15
 		add_attunement_the_eater_of_worlds = @ascension_perk_attunement1
+	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			army_damage_mult = 0.25
+			ship_fire_rate_mult = 0.15
+		}
 	}
 
 	on_enabled = {
@@ -2155,6 +2532,17 @@ ap_weather_control = {
 
 	modifier = {
 		add_attunement_the_cradle_of_souls = @ascension_perk_attunement1
+	}
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			ship_jumpdrive_cooldown_mult = -0.2
+			pop_environment_tolerance = 0.1
+		}
 	}
 
 	on_enabled = {

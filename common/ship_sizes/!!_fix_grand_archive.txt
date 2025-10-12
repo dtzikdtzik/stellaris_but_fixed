@@ -84,8 +84,8 @@ voidworms_small = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 250
-			food = 250
+			minerals = 375 # was 250
+			food = 375 # was 250
 			mult = @fauna_cost_scaling
 		}
 		inline_script = {
@@ -171,8 +171,8 @@ voidworms_medium = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 500
-			food = 500
+			minerals = 750 # was 500
+			food = 750 # was 500
 			mult = @fauna_cost_scaling
 		}
 		inline_script = {
@@ -259,8 +259,8 @@ voidworms_large = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 1600
-			food = 1600
+			minerals = 2400 # was 1600
+			food = 2400 # was 1600
 			mult = @fauna_cost_scaling
 		}
 		inline_script = {
@@ -348,8 +348,8 @@ voidworms_titan = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 4500
-			food = 4500
+			minerals = 6750 # was 4500
+			food = 6750 # was 4500
 			mult = @fauna_cost_scaling
 		}
 		inline_script = {
@@ -479,7 +479,7 @@ cutholoids_hatchling = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 1200
+			minerals = 1800 # was 1200
 			mult = @fauna_cost_scaling
 		}
 		inline_script = {
@@ -561,7 +561,7 @@ cutholoids_juvenile = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 2100
+			minerals = 3150 # was 2100
 			mult = @fauna_cost_scaling
 		}
 		inline_script = {
@@ -646,7 +646,7 @@ cutholoids = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 3700
+			minerals = 5450 # was 3700
 			mult = @fauna_cost_scaling
 		}
 		inline_script = {

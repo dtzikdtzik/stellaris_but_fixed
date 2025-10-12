@@ -95,7 +95,17 @@ ap_engineered_evolution = {
 			}
 		}
 	}
-
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_bonus_workforce_mult = 0.2
+			logistic_growth_mult = 0.1
+		}
+	}
 	potential = {
 		OR = {
 			has_utopia = yes
@@ -177,7 +187,18 @@ ap_the_flesh_is_weak = {
 			num_tradition_categories < @max_tradition_trees
 		}
 	}
-
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 	potential = {
 		OR = {
 			has_utopia = yes
@@ -250,7 +271,18 @@ ap_organo_machine_interfacing = {
 			num_tradition_categories < @max_tradition_trees
 		}
 	}
-
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 	potential = {
 		OR = {
 			has_utopia = yes
@@ -306,7 +338,18 @@ ap_organo_machine_interfacing_assimilator = {
 			num_tradition_categories < @max_tradition_trees
 		}
 	}
-
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 	potential = {
 		OR = {
 			has_utopia = yes
@@ -400,7 +443,18 @@ ap_synthetic_evolution = {
 			num_tradition_categories < @max_tradition_trees
 		}
 	}
-
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 	potential = {
 		OR = {
 			has_utopia = yes
@@ -525,7 +579,18 @@ ap_mind_over_matter = {
 			}
 		}
 	}
-
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 	potential = {
 		OR = {
 			has_utopia = yes
@@ -622,7 +687,18 @@ ap_synthetic_age = {
 		is_chosen_empire = no
 		is_entropy_drinkers_empire = no
 	}
-
+	### AI LATEGAME PATCH
+	triggered_modifier = {
+		potential = {
+			is_ai = yes
+			#is_difficulty = 
+		}
+		modifier = {
+			pop_environment_tolerance = 0.2
+			pop_amenities_usage_mult = -0.2
+			pop_bonus_workforce_mult = 0.1
+		}
+	}
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_2"
