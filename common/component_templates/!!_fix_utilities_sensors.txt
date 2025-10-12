@@ -2,15 +2,15 @@
 @hit3 = 10
 @hit4 = 15
 
-@cost1 = 2
-@cost2 = 4
-@cost3 = 6
-@cost4 = 8
+@cost1 = 3 # was 2
+@cost2 = 6 # was 4
+@cost3 = 9 # was 6
+@cost4 = 12 # was 8
 
-@cost_fauna_1 = 8
-@cost_fauna_2 = 16
-@cost_fauna_3 = 24
-@cost_fauna_4 = 32
+@cost_fauna_1 = 12 # was 8
+@cost_fauna_2 = 24 # was 16
+@cost_fauna_3 = 36 # was 24
+@cost_fauna_4 = 48 # was 32
 
 @power1 = -5
 @power2 = -10

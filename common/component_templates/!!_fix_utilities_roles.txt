@@ -1,7 +1,7 @@
 @cost0 = 0
-@cost1 = 5
-@cost2 = 10
-@cost3 = 20
+@cost1 = 7.5 # was 5
+@cost2 = 15 # was 10
+@cost3 = 30 # was 20
 
 @power0 = -5
 @power1 = -10

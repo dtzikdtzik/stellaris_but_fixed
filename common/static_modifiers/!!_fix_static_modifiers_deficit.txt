@@ -24,6 +24,7 @@ food_deficit = {
 
 influence_deficit = {
 	pop_happiness = -0.20
+	leaders_upkeep_mult = 1
 }
 
 alloys_deficit = {

@@ -368,7 +368,7 @@ planet_devastation = {
 	planet_amenities_mult = -1
 	planet_jobs_produces_mult = -1
 	planet_jobs_upkeep_mult = -1
-	logistic_growth_mult = -1
+	logistic_growth_mult = -1.1 # was -1.0 ## would this cause pop decline?
 	planet_resettlement_unemployed_destination_mult = -1.0
 	pop_happiness = -0.5 ## added
 }

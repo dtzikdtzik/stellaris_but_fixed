@@ -1,14 +1,14 @@
 # Icons set here are the ones show in the actual slot.
 
-@cost1 = 5
-@cost2 = 10
-@cost3 = 15
-@cost4 = 20
+@cost1 = 7.5 # was 5
+@cost2 = 15 # was 10
+@cost3 = 22.5 # was 15
+@cost4 = 30 # was 20
 
-@cost_fauna_1 = 20
-@cost_fauna_2 = 40
-@cost_fauna_3 = 60
-@cost_fauna_4 = 80
+@cost_fauna_1 = 30 # was 20
+@cost_fauna_2 = 60 # was 40
+@cost_fauna_3 = 90 # was 60
+@cost_fauna_4 = 120 # was 80
 
 @power0 = -5
 @power1 = -10
