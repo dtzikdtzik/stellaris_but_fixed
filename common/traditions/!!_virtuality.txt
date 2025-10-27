@@ -60,7 +60,8 @@ tr_virtuality_2 = {
 		planet_bureaucrats_upkeep_mult = -0.1
 		leaders_upkeep_mult = -0.15
 		empire_size_pops_mult = -0.15
-		empire_size_colonies_mult = 1
+		empire_size_colonies_mult = 1.5 # was 1
+		empire_size_systems_mult = 0.5 # added
 	}
 	ai_weight = {
 		factor = 1000

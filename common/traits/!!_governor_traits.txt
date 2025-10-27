@@ -531,12 +531,12 @@ leader_trait_architectural_interest = {
 		trait_is_crisis_faction_check = no
 	}
 	planet_modifier = {
-		planet_structures_upkeep_mult = -0.2
-		planet_building_build_speed_mult = 0.2
+		planet_structures_upkeep_mult = -0.15 # was -0.2
+		planet_building_build_speed_mult = 0.15 # was 0.2
 	}
 	sector_modifier = {
-		planet_structures_upkeep_mult = -0.1
-		planet_building_build_speed_mult = 0.1
+		planet_structures_upkeep_mult = -0.075 #was -0.1
+		planet_building_build_speed_mult = 0.075 # was 0.1
 	}
 	leader_class = { official scientist }
 	opposites = {

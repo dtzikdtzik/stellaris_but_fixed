@@ -76,7 +76,7 @@ tr_purity_exemplary_genetics = {
 	modifier = {
 		BIOLOGICAL_species_trait_points_add = 6
 		BIOLOGICAL_species_trait_picks_add = 2
-		modify_species_cost_mult = -0.50
+		modify_species_cost_mult = -0.25 # was -0.5 # feels appropriate that purity civs may want to be more slow and deliberate with modifying
 	}
 	custom_tooltip_with_modifiers = tr_purity_exemplary_genetics_tt
 

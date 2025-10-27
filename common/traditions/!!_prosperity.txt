@@ -1,13 +1,13 @@
 tr_prosperity_adopt = {
 	unlocks_agenda = agenda_favored_society
 	modifier = {
-		station_gatherers_produces_mult = 0.20
+		station_gatherers_cost_mult = -0.15 # replaced gatherer_output_mult = 0.2 ## mainly cause the adopt and the finish are weird
 	}
 }
 
 tr_prosperity_finish = {
 	modifier = {
-		stations_produces_mult = 0.25
+		stations_produces_mult = 0.15 # was 0.25
 		ascension_perks_add = 1
 	}
 }
@@ -202,7 +202,8 @@ tr_prosperity_pursuit_of_profit = {
 	}
 
 	modifier = {
-		planet_jobs_produces_mult = 0.05
+		pop_workforce_mult = 0.05 # this is slightly weaker than straight production buff (right??)
+		#planet_jobs_produces_mult = 0.05 # removed in favor of above
 	}
 
 	tradition_swap = {
@@ -225,7 +226,8 @@ tr_prosperity_pursuit_of_profit = {
 			is_wilderness_empire = no
 		}
 		modifier = {
-			planet_jobs_produces_mult = 0.05
+			pop_workforce_mult = 0.05 # see above
+			#planet_jobs_produces_mult = 0.05
 		}
 		weight = {
 			factor = 1

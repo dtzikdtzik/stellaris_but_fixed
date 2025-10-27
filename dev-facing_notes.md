@@ -1,41 +1,10 @@
 
-
-
-A Stellaris mod intending to fix some of the current issues
-
-Three Design Intentions:
-
-## 1 PERFORMANCE and POWERCREEP (make this the mod)
- This mod should increase performance!
-- Smaller Economies
-- Fewer Ships
-- Logistics mechanic (while I am a fan of the concept) are reported to be a performance issue and have been turned off for AI
-
-**Direct economic changes include:**
-1. Significantly weakening basic resource production modifiers by a) scaling down the +20% techs, b) decreasing the effects of the basic resource edicts and c) decreasing the effects of the purification buildings. They're still viable! In fact, I suspect they're still very powerfuL!
-2. Nerfed Arc Furnaces.
-3. Minor increase to tradition costs
-4. Nerfed Hydroponics, Solar Panels, Trade Hubs
-5. Reduced Starbase cap
-**More subtle economic downscaling includes:**
-1. Making wars more destructive to pops. Bombardment is significantly more lethal to populations. Collateral damage from armies is slightly increased. 
-
-## 2 Balance
-Revitalise dead or underused mechanics, including:
-- War Exhaustion
-- Bombardment / Ground Combat
-- Claims
-- Espionage
-- Threat
-- GalCOM
-
-## 3 AI and Difficulty (TODO: Split this off as a separate mod)
-These changes should benefit not only hardcore Grand Admiral players looking for a challenge. They intend to keep the AI more stable and less liable to collapse or dramatically fall off in the late-game.
-While 4.0, according to dev diaries, improved AI, it feels much weaker, and falls off quickly as the game lasts. 
-
-
-### HOW IS THE ECONOMY DOWNSCALED?
-Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head, while still solving or mitigating the issues.
+# TODO
+- Remove Ministry of Production? Change to Empire Limit 1? Or lock behind prosperity?
+- The above for other efficiency buildings?
+- Can I make it so that you can't take every tradition in a tree, but have to choose?
+- Make Robots decline if there is no assembly
+- Halve the flat buffs to edict fund?
 
 # Changelog
 ## Economy
@@ -68,6 +37,14 @@ Instead of a big, specific change (the strategy of mods like the excellent _Comp
 - Food processing center: Increased mineral cost (900>1000), halved base farmer production increase (+1 from +2), halved ringworld production increase (+1 from +2)
 - Mineral Purification Hub: See above (Note: Ringworld versions still get +0.5 alloys)
 - Energy Nexus: See above
+### Traditions
+Supremacy:
+- Adopt: Halved army damage (20%>10%)
+- Logistical Corps: Halved naval cap (20%>10%)
+Prosperity:
+- Pursuit of Profit: Replaced production with workforce (crucially NOT bonus workforce)
+Statecraft:
+- Constitutional Focus agenda speed reduced (25%>15%)
 ### Megastructures
 - Arc Furnace resource station modifier progression decreased from 25/50/75/100% to 15/30/40/50% (for furnace levels 1/2/3/4)
 - Arc Furnace level 4 (final level) now requires Mega-Engineering tech
@@ -91,6 +68,8 @@ IMPORTANT2: UPKEEP HAS NOT BEEN ADJUSTED (YET)
 ### Starbase Modules
 - Solar Panel: Energy nerfed from 6 to 5
 - Trade Hub: Trade nerfed from 8 to 6
+### Jobs
+- Robotic Bath Attendant assembly multiplier reduced (7.5%>5%) and amenity upkeep increase increased (0.03>0.04)
 
 
 ## Pops

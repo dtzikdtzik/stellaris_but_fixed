@@ -415,7 +415,8 @@ building_resource_silo = {
 	show_tech_unlock_if = {
 		is_wilderness_empire = no
 	}
-	ai_resource_production {
+
+	ai_resource_production = {
 		trade = 4 #from 0
 	}
 }

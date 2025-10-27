@@ -1074,7 +1074,7 @@ tech_consumer_good_refinement_2 = {
 	tier = 4
 	category = { computing }
 	prerequisites = { "tech_luxuries_2" "tech_consumer_good_refinement_1" "tech_self_aware_logic" }
-	weight = @tier4weight1
+	weight = 0 # was @tier4weight1
 
 	modifier = {
 		planet_artisans_produces_mult = 0.10

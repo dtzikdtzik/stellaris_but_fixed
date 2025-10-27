@@ -2711,7 +2711,7 @@ tech_advanced_metallurgy_2 = {
 	tier = 4
 	category = { materials }
 	prerequisites = { "tech_advanced_metallurgy_1" "tech_alloys_2" "tech_ship_armor_4" }
-	weight = @tier4weight1
+	weight = 0 # was @tier4weight1
 
 	modifier = {
 		planet_metallurgists_produces_mult = 0.10

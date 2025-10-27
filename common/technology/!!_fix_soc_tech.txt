@@ -1172,7 +1172,7 @@ tech_colonization_5 = {
 	tier = 4
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_4" }
-	weight = @tier4weight3
+	weight = 0 # was @tier4weight3
 
 	modifier = {
 		pop_environment_tolerance = 0.05
@@ -3423,7 +3423,7 @@ tech_doctrine_navy_size_1 = {
 	weight = @tier1weight2
 
 	modifier = {
-		country_naval_cap_add = 25
+		country_naval_cap_add = 20 # was 25
 	}
 
 	weight_modifier = {
@@ -3454,7 +3454,7 @@ tech_doctrine_navy_size_2 = {
 	weight = @tier2weight2
 
 	modifier = {
-		country_naval_cap_add = 25
+		country_naval_cap_add = 20 # was 25
 	}
 
 	weight_modifier = {
@@ -3485,7 +3485,7 @@ tech_doctrine_navy_size_3 = {
 	weight = @tier3weight1
 
 	modifier = {
-		country_naval_cap_add = 25
+		country_naval_cap_add = 20 # was 25
 	}
 
 	weight_modifier = {
@@ -3516,7 +3516,7 @@ tech_doctrine_navy_size_4 = {
 	weight = @tier4weight3
 
 	modifier = {
-		country_naval_cap_add = 25
+		country_naval_cap_add = 20 # was 25
 	}
 
 	weight_modifier = {

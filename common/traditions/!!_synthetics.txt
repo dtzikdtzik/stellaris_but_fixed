@@ -359,8 +359,8 @@ tr_synthetics_power_systems = {
 	}
 
 	modifier = {
-		planet_pops_robotics_upkeep_mult = -0.25
-		planet_pop_assemblers_upkeep_mult = -0.25
+		planet_pops_robotics_upkeep_mult = -0.2 # was -0.25
+		planet_pop_assemblers_upkeep_mult = -0.2 # was -0.25
 	}
 
 	tradition_swap = {

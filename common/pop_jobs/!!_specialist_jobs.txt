@@ -1944,8 +1944,8 @@ roboticist = {
 		potential = {
 			roboticist_is_bath_attendant_individual_machine = yes
 		}
-		planet_pop_assembly_mult = 0.0075
-		pop_amenities_usage_mult = 0.03
+		planet_pop_assembly_mult = 0.005 # was 0.0075
+		pop_amenities_usage_mult = 0.04 # 0.03
 		mult = planet.value:toxic_attendant_growth
 	}
 

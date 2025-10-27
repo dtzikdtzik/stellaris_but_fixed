@@ -9,7 +9,7 @@ tr_unyielding_adopt = {
 tr_unyielding_finish = {
 	modifier = {
 		starbase_defense_platform_capacity_mult = 0.5
-		starbases_upkeep_mult = -0.20
+		starbases_upkeep_mult = -0.10 # was -0.20
 		ascension_perks_add = 1
 	}
 
@@ -23,7 +23,7 @@ tr_unyielding_finish = {
 		}
 		modifier = {
 			starbase_defense_platform_capacity_mult = 0.5
-			starbases_upkeep_mult = -0.20
+			starbases_upkeep_mult = -0.10 # was -0.20
 			ascension_perks_add = 1
 		}
 		weight = {
@@ -34,7 +34,7 @@ tr_unyielding_finish = {
 
 tr_unyielding_resistance_is_frugal = {
 	modifier = {
-		army_defense_health_mult = 0.25
+		army_defense_health_mult = 0.15 # was 0.25
 	}
 	custom_tooltip_with_modifiers = tr_unyielding_resistance_is_frugal_desc
 
@@ -150,10 +150,10 @@ tr_unyielding_bulwark_of_harmony = {
 tr_unyielding_defensive_zeal = {
 	custom_tooltip = tr_unyielding_defensive_zeal_desc
 	modifier = {
-		shipclass_starbase_damage_mult = 0.33
-		shipclass_starbase_hull_mult = 0.33
-		shipclass_military_station_damage_mult = 0.33
-		shipclass_military_station_hull_mult = 0.33
+		shipclass_starbase_damage_mult = 0.25 # was 0.33
+		shipclass_starbase_hull_mult = 0.25 # was 0.33
+		shipclass_military_station_damage_mult = 0.25 # was 0.33
+		shipclass_military_station_hull_mult = 0.25 # was 0.33
 	}
 
 	ai_weight = {
@@ -168,7 +168,7 @@ tr_unyielding_fortress_doctrine = {
 
 	modifier = {
 		country_starbase_capacity_add = 2
-		starbase_upgrade_cost_mult = -0.50
+		starbase_upgrade_cost_mult = -0.25 # was -0.5
 	}
 
 	tradition_swap = {
@@ -182,7 +182,7 @@ tr_unyielding_fortress_doctrine = {
 
 		modifier = {
 			country_starbase_capacity_add = 2
-			starbase_upgrade_cost_mult = -0.50
+			starbase_upgrade_cost_mult = -0.25 # was -0.5
 			hostile_operation_sabotage_starbase_difficulty_add = 4
 		}
 
@@ -201,7 +201,7 @@ tr_unyielding_fortress_doctrine = {
 
 		modifier = {
 			country_starbase_capacity_add = 2
-			starbase_upgrade_cost_mult = -0.50
+			starbase_upgrade_cost_mult = -0.25 # was -0.5
 		}
 
 		weight = {
@@ -219,7 +219,7 @@ tr_unyielding_fortress_doctrine = {
 
 		modifier = {
 			country_starbase_capacity_add = 2
-			starbase_upgrade_cost_mult = -0.50
+			starbase_upgrade_cost_mult = -0.25 # was -0.5
 			hostile_operation_sabotage_starbase_difficulty_add = 4
 		}
 
@@ -238,7 +238,7 @@ tr_unyielding_fortress_doctrine = {
 
 		modifier = {
 			country_starbase_capacity_add = 2
-			starbase_upgrade_cost_mult = -0.50
+			starbase_upgrade_cost_mult = -0.25 # was -0.5
 		}
 
 		weight = {
@@ -256,7 +256,7 @@ tr_unyielding_fortress_doctrine = {
 
 		modifier = {
 			country_starbase_capacity_add = 2
-			starbase_upgrade_cost_mult = -0.50
+			starbase_upgrade_cost_mult = -0.25 # was -0.5
 			hostile_operation_sabotage_starbase_difficulty_add = 4
 		}
 

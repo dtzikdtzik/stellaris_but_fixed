@@ -14,7 +14,7 @@ tr_statecraft_finish = {
 
 tr_statecraft_constitutional_focus = {
 	modifier = {
-		council_agenda_progress_speed = 0.25
+		council_agenda_progress_speed = 0.15 # was 0.25
 	}
 	ai_weight = { factor = 1000 }
 

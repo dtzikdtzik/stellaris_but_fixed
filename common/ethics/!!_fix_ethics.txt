@@ -844,7 +844,7 @@ ethic_fanatic_xenophobe = {
 	country_modifier = {
 		country_starbase_influence_cost_mult = -0.4
 		founder_species_growth_mult = 0.20
-		diplomacy_influence_upkeep_mult = 0.5
+		diplomacy_influence_upkeep_mult = 0.5 ## did I add this?
 		add_attunement_the_eater_of_worlds = @ethic_attunement2
 	}
 

@@ -26,7 +26,7 @@ tr_genetics_finish = {
 		}
 	}
 	modifier = {
-		planet_buildings_clone_vats_upkeep_mult = -0.33
+		planet_buildings_clone_vats_upkeep_mult = -0.25 # was -0.33
 		ascension_perks_add = 1
 	}
 
@@ -45,7 +45,7 @@ tr_genetics_finish = {
 		}
 		custom_tooltip = tr_genetics_finish_extra_traits_modifier_desc
 		modifier = {
-			planet_buildings_clone_vats_upkeep_mult = -0.33
+			planet_buildings_clone_vats_upkeep_mult = -0.25 # was -0.33
 			ascension_perks_add = 1
 		}
 	}
