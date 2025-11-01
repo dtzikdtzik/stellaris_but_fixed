@@ -1,6 +1,3 @@
-
-
-
 A Stellaris mod intending to fix some of the current issues
 
 Three Design Intentions:
@@ -28,11 +25,6 @@ Revitalise dead or underused mechanics, including:
 - Espionage
 - Threat
 - GalCOM
-
-## 3 AI and Difficulty (TODO: Split this off as a separate mod)
-These changes should benefit not only hardcore Grand Admiral players looking for a challenge. They intend to keep the AI more stable and less liable to collapse or dramatically fall off in the late-game.
-While 4.0, according to dev diaries, improved AI, it feels much weaker, and falls off quickly as the game lasts. 
-
 
 ### HOW IS THE ECONOMY DOWNSCALED?
 Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head, while still solving or mitigating the issues.
