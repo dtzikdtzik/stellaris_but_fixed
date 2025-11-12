@@ -28,7 +28,8 @@ Instead of a big, specific change (the strategy of mods like the excellent _Comp
 ### Policies
 - Economic Policies (Alloys vs. Consumer Goods) have impact reduced: +25/-25% > +20/-20%
 ### Empire
-- Halved base influence from power projection (2>1) 
+- Halved base influence from power projection (2>1)
+- Slowed Agendas (Base Agenda Cost 7000 > 8000, 3500 > 4000 for short agendas)
 ### Planetary Designations
 - Nerfed production buffs for all basic resource designations (+25%>20%)
 - Trade production from urban designations: +20%>15%
@@ -109,6 +110,7 @@ IMPORTANT2: UPKEEP HAS NOT BEEN ADJUSTED (YET)
 - Finish: Station Output +25% > +15%
 ### Statecraft
 - Constitutional Focus: Agenda Speed +25% > +15%
+- Amongst Peers: Exp Reward 150 > 120 (per level) (this is a -20% nerf)
 ## Traditions (Ascension)
 ### Genetics
 - Finish: Clone Vats Upkeep -33%>25%

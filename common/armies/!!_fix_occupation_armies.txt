@@ -11,7 +11,7 @@ occupation_army = {
 	damage = 1.50
 	morale = 1.25
 	collateral_damage = 1
-	war_exhaustion = 0.2 # No WE from occupation armies
+	war_exhaustion = 0.2 # was 0
 	icon = GFX_army_type_defensive
 
 	potential = {
@@ -39,7 +39,7 @@ robotic_occupation_army = {
 	health = 1.25
 	morale_damage = 1.00
 	collateral_damage = 1.5
-	war_exhaustion = 0.1 # No WE from occupation armies
+	war_exhaustion = 0.1 # was 0
 	has_morale = no
 	icon = GFX_army_type_robot
 	has_species = yes
@@ -67,7 +67,7 @@ machine_occupation_army = {
 	has_morale = no
 	morale_damage = 1.00
 	collateral_damage = 1.5
-	war_exhaustion = 0.1 # No WE from occupation armies
+	war_exhaustion = 0.1 # was 0
 	icon = GFX_army_type_machine_defensive
 	has_species = yes
 
@@ -87,7 +87,7 @@ individual_machine_occupation_army = {
 	morale = 1.25
 	morale_damage = 1.00
 	collateral_damage = 1 #was 0
-	war_exhaustion = 0.1 # was 0 # No WE from occupation armies
+	war_exhaustion = 0.1 # was 0 
 	icon = GFX_army_type_machine_defensive
 	has_species = yes
 

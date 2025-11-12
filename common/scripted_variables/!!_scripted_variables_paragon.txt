@@ -1,0 +1,1 @@
+@statecraft_amongst_peers_exp_reward = 120

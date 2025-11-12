@@ -1,0 +1,2 @@
+@base_tradition_agenda_cost = 8000 # 7000
+@short_agenda_cost = 4000 # 3500
