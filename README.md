@@ -12,27 +12,36 @@ Remove ship cost reduction from shipclass techs
 Unlock ship sections with more slots
 Increase food upkeep for bioships and fauna
 
-**Direct economic changes include:**
-1. Significantly weakening basic resource production modifiers by a) scaling down the +20% techs, b) decreasing the effects of the basic resource edicts and c) decreasing the effects of the purification buildings. They're still viable! In fact, I suspect they're still very powerfuL!
-2. Nerfed Arc Furnaces.
-3. Minor increase to tradition costs
-4. Nerfed Hydroponics, Solar Panels, Trade Hubs
-5. Reduced Starbase cap
-**More subtle economic downscaling includes:**
-1. Making wars more destructive to pops. Bombardment is significantly more lethal to populations. Collateral damage from armies is slightly increased. 
+# Notable Changes
+1. Nerfed basic resource edicts and purification buildings
+2. Nerfed Arc Furnaces
+3. Nerfed Tradition/Ascension rushing (increased base tradition cost slightly)
+4. Nerfed Starbase Economy (Hydroponics, Solar Panels, Trade Hubs)
+    I felt that these 4 points were some of the worst powercreep offenders outside of specific builds. Basic resource edicts and buildings created planets that would easily outproduce Dyson Spheres, Arc Furnaces trivialised midgame alloy/mineral economy, Hydroponic Bays trivialised early game food economy unless you had bioships and enough Starbases could carry your early game economy through Trade Hubs. Also, rushing your ascension seems the dominant strategy in every build and having traditions completed long before the endgame was a norm.
+    Note that I believe all 4 are still powerful, even after the nerfs!
+
 
 ### HOW IS THE ECONOMY DOWNSCALED?
-Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head, while still solving or mitigating the issues.
+Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head.
 
 # Changelog
 ### Policies
 - Economic Policies (Alloys vs. Consumer Goods) have impact reduced: +25/-25% > +20/-20%
 ### Empire
-- Halved base influence from power projection (2>1)
+- Halved base Influence from power projection (2>1)
 - Slowed Agendas (Base Agenda Cost 7000 > 8000, 3500 > 4000 for short agendas)
+## Councilors
+- Oligarchic Ruler: Councilor Exp. +5% > +3% (always per level)
+- Dictatorial Ruler: Amenities Usage -2% > -1% 
+- Imperial Ruler: Power Projection Influence 0.25 > 0.2
+- Machine Ruler: Empire Size from Pops -3% > -2%
+- Beastmasters: Space Fauna Damage +3% > +2%
 ### Planetary Designations
 - Nerfed production buffs for all basic resource designations (+25%>20%)
 - Trade production from urban designations: +20%>15%
+- Capitals: Stability +5 > 0 (Default Capitals still get additional amenities, housing and governing ethics attraction)
+- Habitat Farming Designation: Farmer Output +25% > +10% (symmetric with other habitat resource designations)
+- Cosmogenesis Designation: Job Output +15% > +10%
 ### Ethics
 - Authoritarians: +20%/+10% leader upkeep REVIEW
 - Egalitarian: -50%/-25% governing ethics attraction, +50%/25% ethics shift speed REVIEW

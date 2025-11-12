@@ -17,20 +17,6 @@
 		GUARANTEED_COLONIES_MIN = 0
 		GUARANTEED_COLONIES_MAX = 2
 
-		# These values control the mid and end game sliders in game setup
-		MID_GAME_START_DEFAULT = 100
-		MID_GAME_START_MAX = 400
-		MID_GAME_START_MIN = 25
-		END_GAME_START_DEFAULT = 200
-		END_GAME_START_MAX = 800
-		END_GAME_START_MIN = 50
-		START_YEAR_SLIDER_INTERVAL = 25
-		VICTORY_YEAR_DEFAULT = 300
-		VICTORY_YEAR_MAX = 1050
-		VICTORY_YEAR_MIN = 100
-		VICTORY_YEAR_SLIDER_INTERVAL = 50
-
-
 		TECH_COST_DEFAULT = 1.0
 		TECH_COST_MIN = 0.25
 		TECH_COST_MAX = 5.00
@@ -43,24 +29,6 @@
 		TRADITION_COST_MAX = 5.00
 		TRADITION_COST_SLIDER_INTERVAL = 0.25
 
-		LOGISTIC_CEILING_DEFAULT = 5
-		LOGISTIC_CEILING_MIN = 1
-		LOGISTIC_CEILING_MAX = 10
-		LOGISTIC_CEILING_SLIDER_INTERVAL = 0.5
-
-		CITIZENSHIP_TYPE_DEFAULT = "citizenship_full"
-		SLAVERY_TYPE_DEFAULT = "slavery_normal"
-		PURGE_TYPE_DEFAULT = "purge_normal"
-		SUBSPECIES_INTEGRATION_TYPE_DEFAULT = "no_integration"
-
-		HIVE_EMPIRE_GOVERNMENT_AUTHORITY = "auth_hive_mind"
-		MACHINE_EMPIRE_GOVERNMENT_AUTHORITY = "auth_machine_intelligence"
-
-		#Order is citizenship - colonisation control - living standard - migration control - military service - population control - purge - slavery - sub-species integration
-		SPECIES_RIGHTS_INITIAL_CONFIG_PRIMARY = { citizenship_full colonization_control_no living_standard_normal migration_control_no military_service_full population_control_no purge_normal slavery_normal no_integration }	#Initial config the game generates for your species rights module. It should at some point check weights and potentials, so this probably doesn't do much. Except break the game if left blank.
-		SPECIES_RIGHTS_INITIAL_CONFIG_DEFAULT = { citizenship_limited colonization_control_no living_standard_stratified migration_control_no military_service_limited population_control_no purge_normal slavery_normal no_integration }	#Ditto
-		SPECIES_RIGHTS_INITIAL_CONFIG_BUILT = { citizenship_robot_servitude colonization_control_yes living_standard_servitude migration_control_yes military_service_limited population_control_no purge_normal slavery_normal no_integration }	#Ditto
-
 		GROWTH_SCALE_DEFAULT = 0.25
 		GROWTH_SCALE_MIN = 0.0
 		GROWTH_SCALE_MAX = 1.0
@@ -72,22 +40,6 @@
 		VIVARIUM_BREEDING_RARITY_RARE = { 78 14 6 2 }
 		VIVARIUM_BREEDING_RARITY_EPIC = { 56 28 12 4 }
 		VIVARIUM_BREEDING_RARITY_LEGENDARY = { 33 35 24 8 }
-
-
-		TRIGGERED_MODIFIER_UPDATE_DELAY = 5 			# The game will only update triggered modifiers on each game object every X days
-
-		LIMITED_EXPLORATION = 1		# If set to 1, only science ships with scientists or military fleets let by an commander can enter unvisited systems
-
-		RANDOM_START_DISTANCE = 75		# The minimum distance at which empires will spawn from each other in random start
-
-
-		SCAVENGE_DEBRIS_RESOURCE_MULT = 0.1		# The amount of resources of the cost for the shipdesign of the debris that should be given when scavenging it
-		REANIMATE_DEBRIS_COST_MULT = 0.5  		# The ratio of the original ship costs
-
-		DECADENCE_START = 20	# After this many years of being awakened, an awakened empire will experience decadence
-		DECADENCE_CHANCE = 0.5	# Chance of decadence increasing each month (multiplied by total size of empire & subjects)
-		DECADENCE_INCREASE = 2	# How much does decadence increase per time?
-		DECADENCE_MAX = 100		# Max decadence
 
 		LOGISTICS_FLEET_UPKEEP_DEFAULT = 1.0
 		LOGISTICS_FLEET_UPKEEP_MIN = 0.0
@@ -112,9 +64,6 @@
 		BASE_PLANET_SUBJECT_HOLDING_BUILDING_SLOTS	= 0
 		MAX_PLANET_SUBJECT_HOLDING_BUILDING_SLOTS	= 4
 
-		BASE_SYNAPTIC_LATHE_BUILDING_SLOTS	= 1
-		MAX_SYNAPTIC_LATHE_BUILDING_SLOTS	= 7
-
 		BRANCH_OFFICE_INCOME_SCALE				= 0.5 # Per planet trade value
 		BRANCH_OFFICE_COST_INCREASE_MIN_RANGE	= 3		# Above this number of hyperlane jumps away, increase cost for branch offices
 		BRANCH_OFFICE_COST_INCREASE_SCALE		= 0.1	# Additional cost per jump
@@ -133,12 +82,6 @@
 		MAX_PLANET_CRIME					= 100	# Maximum planetary crime
 		CRIMINAL_SYNDICATE_HIGH_CRIME_MULT	= 0.75	# Applied to branch office value at max crime
 		CRIMINAL_SYNDICATE_LOW_CRIME_MULT	= -0.5	# Applied to branch office value at no crime
-
-		MIN_PLANET_AMENITIES				= 0.25	# Mult of amenities to amenities needs
-		MAX_PLANET_AMENITIES				= 2.0	# Mult of amenities to amenities needs
-
-		MIN_PLANET_RELATIVE_HOUSING			= 0.5	# Mult of housing to housing needs
-		MAX_PLANET_RELATIVE_HOUSING			= 4.0	# Mult of housing to housing needs
 
 		DEFAULT_TRAIT_OPTIONS_ON_LEVEL_UP		= 2	# Default number of selectable non-upgrade trait options before modifiers available on level up
 		NUM_DESTINY_TRAIT_OPTIONS				= 3	# Default number of destiny traits to select from
@@ -162,77 +105,9 @@
 
 		PLANETARY_ASCENSION_COST_REDUCTION_MIN = 0.1 # Planetary Ascension should not see its cost reduced by more than 90% 
 
-		QUICK_CLEAR_BLOCKER_GENERAL_MODIFIER_WEIGHT = 1	 # How heavily should general max districts modifier be considered for quick-clear blocker
-		QUICK_CLEAR_BLOCKER_SPECIFIC_MODIFIER_WEIGHT = 1	# How heavily should specific-type max districts modifier be considered for quick-clear blocker
-
-		ALLOW_EMPIRE_DESIGN_CHEATS = no
-
 		SYNAPTIC_LATHE_EFFICIENCY_SCALE				= 0.0005		# Used to calculate the efficency rate of the Synaptic Lathe in the UI. Efficiency = NumPops * SYNAPTIC_LATHE_EFFICIENCY_SCALE (Should match the divider in num_chip_slave scripted trigger to be correct)
 		MEDIUM_SYNAPTIC_LATHE_EFFICIENCY			= 0		# Decides the line between showing the efficency as red or yellow. 100% as the line will be 1 in this define
 		HIGH_SYNAPTIC_LATHE_EFFICIENCY				= 0		# Decides the line between showing the efficency as yellow or green. 100% as the line will be 1 in this define
-
-
-		ECON_POWER_COST_DIV				= 1
-		TECH_POWER_COST_DIV				= 100
-		TECH_BASE_POWER					= 200
-		TECH_REPEATABLE_POWER_MULT		= 1.0
-		RELATIVE_POWER_FLEET_MULT		= 2.0	# How much is fleet power factored when determining relative power
-		RELATIVE_POWER_ECONOMY_MULT		= 3.0	# How much is economic power factored when determining relative power
-		RELATIVE_POWER_TECH_MULT		= 1.0	# How much is technological power factored when determining relative power
-
-		MIN_HABITABILITY = 0.0					# Planet habitability must be at least this value to be able to colonize
-
-		ABANDONED_EMPIRE_FLAG = "special/abandoned.dds"
-		PRE_COMMUNICATIONS_EMPIRE_FLAG = "special/unknown.dds"
-		FLEET_MIN_TI_CLEAR_RADIUS = 10			# min radius for clearing terra incognita will use the highest of this and sensor range
-		TI_TEXTURE_SIZE = 256					# size of the internal terra incognita texture high resolutions can cause stuttering and will increase memory demand and save file size.
-		TI_CORE_SCALE = 0.9
-		START_YEAR = 2200
-		SYSTEM_INNER_RADIUS_OFFSET = 30
-		SYSTEM_MIN_INNER_RADIUS = 150
-		SYSTEM_OUTER_RADIUS_OFFSET = 100
-		SYSTEM_BOTTLENECK_RADIUS = 2				# System will be considered bottleneck if within N systems there are no intersections between all of the directions
-
-		SHIP_DESIGN_SAME_NAME_FACTOR = 10			# The higher this is, the more likely a design of the same name is to be picked when upgrading to latest design
-
-		GALACTIC_DEFENSE_FORCE_NAMELIST = "GDF"
-		IMPERIAL_ARMADA_NAMELIST = "IA"
-
-		JUMP_DRIVE_COOLDOWN = 200										# Days between uses of Jump Drive
-		ASTRAL_JUMP_COOLDOWN = 900										# Days between uses of Astral Jump
-		PHASE_FLEET_COOLDOWN = 360										# Days between uses of Phase Fleet
-		PHASE_FLEET_DURATION = 180
-
-		RELEVANT_DISTANCE = 150				# Within this distance we're considered to be diplomatically relevant
-
-		CONSTRUCTION_SHIP_WORK_SPEED_MULT = 1	# Construction ship construction speed multiplier
-		CONSTRUCTION_SHIP_STATION_OFFSET = 5		# distance to the station that the ship is building
-		SCIENCE_SHIP_SPECIAL_PROJECT_OFFSET = 20	# distance to the special project when collecting data
-		SCIENCE_SHIP_SURVEY_SPEED_MULT = 0.5		# Science ship survey speed multiplier
-		SCIENCE_SHIP_ANOMALY_RESEARCH_DAYS = { # equal level is middle (count of items / 2)
-			20		#9 levels above anomaly
-			24		#8 levels above anomaly
-			30		#7 levels above anomaly
-			35		#6 levels above anomaly
-			45		#5 levels above anomaly
-			55		#4 levels above anomaly
-			65		#3 levels above anomaly
-			80		#2 levels above anomaly
-			100		#1 level above anomaly
-			120		#0 level equal to anomaly
-			180		#1 level below anomaly
-			300		#2 levels below anomaly
-			540		#3 levels below anomaly
-			720		#4 levels below anomaly
-			1080	#5 levels below anomaly
-			1440	#6 levels below anomaly
-			2160	#7 levels below anomaly
-			2880	#8 levels below anomaly
-			5760	#9 levels below anomaly
-		}
-
-
-		BASE_SURVEY_TIME		= 30.0				# Base Time In Days for surveying a planet
 
 		LEADER_POOL_SIZE		= 3				# Each leader pool will consist of this many leaders
 		EXTERNAL_LEADER_POOL_SIZE	= 1			# Base amount of external leaders in the leader pool
@@ -288,13 +163,6 @@
 		LEADER_LIFESPAN_HIGH_DEATH_CHANCE_AGE = 100			# Above this age, death chance increases drastically
 		LEADER_LIFESPAN_HIGH_DEATH_CHANCE_INC = 0.02		# Increase with these % for each year above HIGH_DEATH_CHANCE_AGE
 
-		MAX_LEADERS_PER_TRADE = 1							# The max amount of leaders you can trade in one trade deal
-
-		HABITABILITY_IDEAL_PLANET		= 1.00			# Habitability of Gaia worlds
-		HABITABILITY_WRONG_PLANET		= 0.70			# Below which point we color habitability icons and text yellow
-		HABITABILITY_OPPOSITE_PLANET	= 0.40			# Below which point we color habitability icons and text red
-		HABITABILITY_AUTO_MIGRATION		= 0.20			# The minimum habitability that will be considered for automatic migration
-
 		WAR_EXHAUSTION_NAVAL_CAP_ADD			= 100
 		WAR_EXHAUSTION_SHIP_KILLED_MULT			= 2.00	# Multiplier of war exhaustion gained from ships
 		WAR_EXHAUSTION_ARMY_KILLED_MULT			= 0.3 # was 0.25 #	# Multiplier of war exhaustion gained from land battles (armies)
@@ -305,13 +173,8 @@
 		WAR_EXHAUSTION_FROM_UNITS_CUTOFF		= 1.0		# At this amount of war exhaustion (excluding occupation) you stop gaining war exhaustion from lost units
 		WAR_EXHAUSTION_HIGH_THRESHOLD			= 1.0		# Apply negative modifier and show alert if war exhaustion >= this
 
-		ENFORCE_STATUS_QUO_ENABLED				= yes		# Can status quo be enforced at high WE?
-		ENFORCE_STATUS_QUO_MONTHS				= 24
-
-
 		PLANET_HEALTH_MAX					= 100
 		PLANET_HEALTH_REGEN					= 0.03 # was 0.05 #			# Each day
-		PLANET_HEALTH_REGEN_DELAY			= 60		# Days since being bombarded before repairs can be done at full speed
 
 		PLANET_HEALTH_PROTECT_POPS				 = 1 # was 0.75 #			# At above this health fraction, pops will not die
 		PLANET_HEALTH_PROTECT_ARMIES			 = 0.75		# At above this health fraction, defending armies take half damage from bombardment
@@ -323,7 +186,6 @@
 
 		NEXT_ELECTION_MESSAGE_DAYS			= 180	# Days player can choose a new ruler from new election date
 		NEW_RULER_MESSAGE_DAYS				= 45	# Days player can see message of new ruler
-
 
 		GOVERNMENT_CIVIC_POINTS_BASE		= 2		# Base amount of civic points (to "pay" for government civic costs)
 
@@ -338,58 +200,16 @@
 		POP_ETHOS_DIVERGENCE_MIN_POP_AMOUNT			= 100	# Pop groups with amount less or equal this will change fully
 		POP_CHANGE_FACTION_CHANCE						= 0.05	# Every month this % of pops from a pop group will change faction (and move to a different pop group)
 		POP_CHANGE_FACTION_MIN_POP_AMOUNT				= 100	# Pop groups with amount less or equal this will change fully
-		POP_CURRENT_FACTION_WEIGHT						= 1.25	# Weight for current faction is multiplied by this much for pops
 		POP_FACTION_APPROVAL_VERY_LOW					= 0.20	# Below this level of approval a faction will have severe happiness penalties
 		POP_FACTION_APPROVAL_LOW						= 0.40	# Below this level of approval a faction will have severe happiness penalties
 		POP_FACTION_APPROVAL_BASE						= 0.50	# Base faction approval
 		POP_FACTION_APPROVAL_HIGH						= 0.60	# Above this level of approval a faction will have some bonus happiness
 		POP_FACTION_APPROVAL_VERY_HIGH					= 0.80	# Above this level of approval a faction will have more bonus happiness
 		POP_FACTION_MIN_POTENTIAL_MEMBERS				= 500	# If a faction has fewer potential members than this, do not form, and delete if formed
-		POP_FACTION_MIN_POTENTIAL_MEMBERS_FRACTION		= 0.03 	# If a faction has fewer potential members / total pops in factions (if not 0) than this, do not form, and delete if formed
-		POP_FACTION_CREATION_COOLDOWN					= 180	# Wait this many days after creating a faction to create another one (not applied to hidden factions)
 		POP_FACTION_RESOURCE_TABLE_MULT 				= 1	# Resources granted by factions are multiplied by <power of supporters> x <approval> x this
-
-		POLICY_YEARS						= 10	# Years a set policy can not be changed for
-		SPECIES_POLICY_YEARS				= 10
-
-		FEDERATION_LEADER_POWER_THRESHOLD	= 1.25	# Must have this much more power than current Federation leader to become new leader
-		FEDERATION_MIN_MEMBERS_TO_KICK		= 3	# Can't kick alliance members unless you have at least this many members
-		FEDERATION_EXPERIENCE_BUFFER 		= 2000	# When a federation reaches max level, it will carry on gaining experience up to this level
-
-		DEBRIS_BASE_COST					= 0	# Base cost of special project for analyzing debris
-		DEBRIS_ANALYZED_AREA_POINTS			= 20	# Points * Level given for each component analyzed
-		DEBRIS_ANALYZED_TECH_PROGRESS		= 0.10	# Tech progress added when analyzing component that require tech you don't have
-		DEBRIS_DAYS							= 1800	# How many days the debris is visible for
-		DEBRIS_RESEARCH_TIME				= 90	# How many days it takes to analyze 1 debris.
-
-		DEBRIS_REANIMATE_RESEARCH_MIN					= 180	# Minimum number of days to research fauna reanimation debris
-		DEBRIS_REANIMATE_RESEARCH_MAX					= 1080	# Maximum number of days to research fauna reanimation debris
-		DEBRIS_REANIMATE_RESEARCH_FLEET_SIZE_THRESHOLD 	= 40	# Fleet size threshold above which the debris research time will increase
-		DEBRIS_REANIMATE_RESEARCH_FLEET_SIZE_INCREASE 	= 180	# Amount of extra research days for every reached fleet size threshold
-
-		FEDERATION_PERK_EXPERATION_MONTHS	= 3		#Month for picked perk to expire if level lost
-		FEDERATION_BASE_ETHICS				= 3		# count of unique ethics not penalized for federation cohesion
-		FEDERATION_ENVOY_BASE_EFFECT		= 1.0	# envoys base effect on cohesion
-		FEDERATION_MEMBERS_PENALTY			= -0.25	# penalty for each federation member
-		FEDERATION_NO_MEMBERS_PENALTY		= -100.0	# penalty if the federation has no members
-		FEDERATION_ETHICS_PENALTY			= -0.15	# Federation cohesion penalty for extra unique ethics
-		FEDERATION_OPPOSING_ETHICS_PENALTY	= -0.5	# Federation cohesion for opposing ethics
-		FEDERATION_BASE_COHESION			= 5.0	# base federation cohesion
-		FEDERATION_COHESION_RANGE			= 100	# max cohesion range
-		FEDERATION_COHESION_TO_XP			= 0.1	# cohesion to xp conversion
-		FEDERATION_MAX_FLEET_SIZE			= 0
-		FEDERATION_JOIN_COHESION_PENALTY	= -100	# Cohesion loss every time a new member is added to the federation (after the first two)
-		FEDERATION_LEAVE_COHESION_PENALTY	= -100 # Cohesion loss every time a member leaves the federation
-		FEDERATION_SWITCH_COHESION_PENALTY	= -50	# Cohesion loss when you switch federation type
-
 
 		MAX_FRICTION						= 100	# Max friction (total)
 		FRICTION_FROM_BORDERING_SYSTEM		= 5	# Friction for each bordering system
-
-		CUSTOM_EMPIRE_SPAWN_CHANCE			= 50	# Chance that an empire will be created from an existing template instead of randomly generated (10 = 1% chance)
-		FALLEN_CUSTOM_EMPIRE_SPAWN_CHANCE	= 50	# Chance that a fallen empire will be created from an existing template instead of randomly generated (10 = 1% chance), if allowed in that fallen empire script
-		FALLEN_EMPIRE_OUTER_BOUNDARY		= 100	# Outer boundary of galaxy that fallen empire generation will try to avoid
-		FALLEN_EMPIRE_INNER_BOUNDARY		= 0		# Inner boundary of galaxy that fallen empire generation will try to avoid
 
 		COUNCIL_AGENDA_BASE_COUNCILOR_MONTHLY_PROGRESS = 10.0		# Monthly progress gained towards advancing an agenda per councilor
 		COUNCIL_AGENDA_COUNCILOR_PROGRESS_PER_SKILL = 1.0		# Monthly progress gained towards advancing an agenda per councilor skill level
@@ -397,10 +217,6 @@
 		COUNCIL_AGENDA_FINISH_MODIFIER_DURATION = 3600 			# Duration of agenda finish modifier. Should match @agenda_finish_modifier_duration
 		COUNCIL_AGENDA_HIGH_LEGITIMACY_MODIIFER = 0.25 		# Maximum Agenda speed modifier from high legitimacy (i.e. at 100% Legitimacy)
 		COUNCIL_AGENDA_LOW_LEGITIMACY_MODIIFER = -0.50		# Maximum Agenda speed modifier from low legitimacy (i.e. at 0% Legitimacy).
-
-
-		# Planet size factor, applies to units and buildings
-		ORBITAL_BOMBARDMENT_PLANET_SIZE_FACTOR          = 0.1   # Planets take damage / ( 1 + planet size * ORBITAL_BOMBARDMENT_PLANET_SIZE_FACTOR ), bigger planets take less dmg
 
 		# Bombardment damage to planets from ships
 
@@ -436,7 +252,6 @@
 		ANOMALY_SPAWN_CHANCE					= 0.050  # Percent chance that a planet gets a discovery when surveyed
 		ANOMALY_SPAWN_CHANCE_INCREMENT			= 0.0025 # Percentage increase towards next chance when failing
 
-
 		EMPIRE_SIZE_BASE						= 100 	# No modifiers at this empire size or below		### P_PHOENIX ADJUSTMENTS ###
 		EMPIRE_SIZE_FLOOR						= 50	# Empire Size is never treated as under this	# Pops are BY FAR biggest contributor
 		EMPIRE_SIZE_FROM_DISTRICTS				= 0.75	# Per district									# was 0.5
@@ -457,24 +272,12 @@
 		TRADITION_COST_TRADITION_EXP			= 1.800	# change this value if you want to increase costs at the end
 		TRADITION_COST_MULT_TRADITION_GROUP		= 0.00		# each adopted group adds +X% to total cost
 
-
-
-		AI_FULL_RIGHTS_POLICY_FLAG = "ai_full_rights"
-		BORDERS_OPEN_POLICY_FLAG = "border_policy_open"
-
-		SET_DEFENDER_WAR_GOAL_TIME_LIMIT		= 360	# Days defender have to set war goal after war started.
-
 		OCCUPATION_BASE_VALUE					= 5		# Base value of occupied system, used for calculating relative occupation score of empire
 		OCCUPATION_PLANET_VALUE					= 10	# Per planet in system
 		OCCUPATION_POP_VALUE					= 0.001	# Per pop in system
 		OCCUPATION_STARBASE_VALUE				= 10	# If starbase is upgraded
 
-		SYSTEM_LOST_CLAIM_STRENGTH				= 10		# Strength of a claim given to an empire when their system is annexed
-
 		RESOURCE_CLUSTER_COUNT					= 6	# Number of resource clusters containing special resources
-
-
-		RESEARCH_AGREEMENT_SPEED_MULT			= 0.25	# Research speed increased by this for trade research agreement deal
 
 		# These are used to determine the initial subject loyalty based on relation and relative military power
 		SUBJECT_LOYALTY_RELATION_FACTOR = 50		# Multiplied with relation (0-4) for initial loyalty
@@ -528,9 +331,6 @@
 		# Designation modifier formula: MOD * ( 1 + ( Ascension Tier * PLANET_ASCENSION_MODIFIER_SCALE )
 		PLANET_ASCENSION_MODIFIER_SCALE		= 0.25 # Scaling factor of the designation benefits, multiple instances will sum (first will be 1.25, then 1.50...)
 
-
-		EDICT_MAX_RESOURCE_COST			= 1000000
-
 		ARCHAEOLOGICAL_SITE_DICE_ROLL_MIN = 1
 		ARCHAEOLOGICAL_SITE_DICE_ROLL_MAX = 10
 		ARCHAEOLOGICAL_SITE_DISCOVERY_SCORE = 14
@@ -541,24 +341,10 @@
 		ESPIONAGE_OPERATION_DICE_ROLL_MIN = 1
 		ESPIONAGE_OPERATION_DICE_ROLL_MAX = 10
 
-		OPINION_MAX							= 1500		# Upper limit for opinion value
-		OPINION_EXCELLENT					= 750		# Min value to be considered level excellent
-		OPINION_GOOD						= 300		# Min value to be considered level good
-		OPINION_POOR						= -300		# Max value to be considered level poor
-		OPINION_TERRIBLE					= -750		# Max value to be considered level terrible
-		OPINION_MIN							= -1500		# Lower limit for opinion value
-
-		FAVOR_CAP							= 10		# Max amount of favors from same empire that can be stored
-		FAVORS_PER_RESOLUTION_CAP			= 100		# Max amount of favors that can be used for a resolution
-		BORROWED_DIPLO_WEIGHT_FAVOR_MULT	= 0.1		# Diplo weight mult per favor
-
-
+		
 
 		EDICT_CAPACITY_BASE					= 1			# Max number of active edicts before penalties kick in
 		EDICT_UNITY_AMBITION_COST_MULT		= 0.001		# Active Unity Ambitions cost (Next Tradition * this) Unity per month
-
-
-		DETECTION_INTEL_DECAY_MONTHS		= 120		# Length of time to retain memory of having been detected in a system
 
 		FIRST_CONTACT_DICE_ROLL_MIN			= 1
 		FIRST_CONTACT_DICE_ROLL_MAX		= 10
@@ -573,53 +359,11 @@
 		FIRST_CONTACT_INTEL_TARGET			= 10
 
 
-		SPY_NETWORK_LEVELS					= 50		# What is the base maximum spy network level? (spy_network_levels_add and relative encryption can increase this value)
-		SPY_NETWORK_MAX_LEVELS				= 100		# What is the absolute maximum spy network level?
-		SPY_NETWORK_ENCRYPTION_DECRYPTION_LEVELS_EFFECT = -10	# How much does each point of relative encryption difference modify the maximum network level?
-		SPY_NETWORK_ENCRYPTION_DECRYPTION_LEVELS_MIN = -50		# Lower bounds on the infiltration level modifier value
-		SPY_NETWORK_ENCRYPTION_DECRYPTION_LEVELS_MAX = 50		# Upper bounds on the infiltration level modifier value
-		SPY_NETWORK_MAX_POWER				= 100		# Including all modifiers, how powerful can a Spy Network ever be?
-		SPY_NETWORK_MAX_ENVOYS_COUNT		= 1			# How many envoys can be assigned to build a single spy network?
-		SPY_NETWORK_DAILY_ENVOY_SCORE		= 1.0		# How much progression do you get for each envoy
-		SPY_NETWORK_SPRAWL_SCORE_SCALE		= 400.0		# This many empire sprawl in the opposing empire adds 1 to daily spy network progression.
-		SPY_NETWORK_BASE_LEVEL_SCORE		= 5.0		# It takes (SPY_NETWORK_BASE_LEVEL_SCORE) + (Current Level * SPY_NETWORK_PER_LEVEL_SCORE) points to increase spy network level
-		SPY_NETWORK_PER_LEVEL_SCORE			= 5.0		# Per level portion of the above formula
-		SPY_NETWORK_MONTHLY_DECAY			= 1.0		# If we don't have an envoy assigned to a spy network or it's above the max value, it decays at this many levels per month
-		SPY_NETWORK_ENCRYPTION_DECRYPTION_BONUS_MULT = -0.10	#Encryption vs decryption bonus scale, multiplied with the difference between those values.
-		SPY_NETWORK_ENCRYPTION_DECRYPTION_BONUS_MIN = -0.4	# Lower bounds to encryption vs decryption (bad for attacker)
-		SPY_NETWORK_ENCRYPTION_DECRYPTION_BONUS_MAX = 0.4	# Upper bounds to encryption vs decryption (good for attacker)
-		SPY_NETWORK_MAXIMUM_ASSIGNED_ASSETS = 1			# Maximal number of assets that can be assigned to spy network
-		SPY_NETWORK_RELATIVE_ENCRYPTION_DIFFICULTY_MULT = 1	# Difficulty modifier to be multiplied to the relative encryption
-		SPY_NETWORK_RELATIVE_ENCRYPTION_DIFFICULTY_MIN = -4		# How low can excess Codebreaking drop the difficulty of operations? Negative numbers good for the spy.
-		SPY_NETWORK_RELATIVE_ENCRYPTION_DIFFICULTY_MAX = 4		# How high can excess Encryption increase the difficulty of operations? Positive numbers good for the defender.
-		SPY_NETWORK_RELATIVE_ENCRYPTION_MIN = -4	# Lower bounds for relative encryption
-		SPY_NETWORK_RELATIVE_ENCRYPTION_MAX = 4	# Upper bounds for relative encryption
-
-
-		TRADITION_CATEGORIES_MAX			= 7
-
 		COUNCIL_COHESION_EDICT_FUND_MAX_MULT = 0.5 # Maximum edict fund multiplier from council cohesion
 		COUNCIL_COHESION_TREND_FACTOR = 0.01 # Monthly council cohesion change
 		COUNCIL_COHESION_SCORE_FANATIC_ETHIC = 1.5 	# Cohesion change from matching/mismatching fanatic ethics
 		COUNCIL_COHESION_SCORE_ETHIC = 1.0 			# Cohesion change from normal ethics
 
-		FLEET_LEASE_DAYS_MAXIMUM = 36000	# A fleet can be leased for this number of days maximum
-		FLEET_LEASE_DAYS_DEFAULT = 3600		# A fleet can be leased for this number of days by default
-
-		AGREEMENT_CHANGE_COOLDOWN_MONTHS 			= 60	# How often an agreement can be changed in months
-		AGREEMENT_LOYALTY_DELTA_MULT				= 5		# Used in Influence Cost calculations
-		AGREEMENT_PROPOSE_INFLUENCE_COST 			= 50	# Base cost of agreement proposal. + |Loyalty Delta| * AGREEMENT_LOYALTY_DELTA_MULT between old and new agreements
-		AGREEMENT_DENY_AS_SUBJECT_INFLUENCE_COST	= 50	# + |Loyalty Delta| * AGREEMENT_LOYALTY_DELTA_MULT between old and new agreements
-		AGREEMENT_DENY_AS_OVERLORD_INFLUENCE_COST	= 25	# + |Loyalty Delta| * AGREEMENT_LOYALTY_DELTA_MULT between old and new agreements
-		AGREEMENT_EXPANSION_TITHE_FACTOR			= 0.5	# Factor applied on the total after modifiers are applied. 1.5 means 50% more cost which goes to the overlord
-
-		AGREEMENT_PRESET_RELEASE_AS_SECTOR			= "preset_release_sector"		# Preset that will be applied when releasing a sector as a vassal
-		AGREEMENT_PRESET_VASSAL						= "preset_vassal"				# The standard Vassal preset
-		AGREEMENT_INTEGRATION_TERM					= "subject_integration"			# The agreement term for integration
-		AGREEMENT_CAN_INTEGRATE_TERM_VALUE			= "subject_can_be_integrated"	# The agreement term value for allowing integration
-
-		CLOAKING_ACTIVATION_COOLDOWN				= 120 #days
-		CLOAKING_LEVEL_MAX							= 10 #days
 
 		ASTRAL_RIFT_DEFAULT_DISPLAY_SIZE = 100.0
 		ASTRAL_RIFT_DICE_ROLL_MIN	= 1
@@ -665,17 +409,6 @@
 		GRAVITY_SNARE_CAPTURE_CHANCE_PER_SCIENTIST_LEVEL = 0.1
 		RARITY_UPGRADE_COST_MULT = 0.05
 
-
-		VOIDWORMS_SCALING_DEFAULT = 1.0
-		VOIDWORMS_SCALING_MIN = 0.0
-		VOIDWORMS_SCALING_MAX = 3.0
-		VOIDWORMS_SCALING_SLIDER_INTERVAL = 0.5
-
-		CUTHOLOIDS_SCALING_DEFAULT = 1.0
-		CUTHOLOIDS_SCALING_MIN = 0.0
-		CUTHOLOIDS_SCALING_MAX = 3.0
-		CUTHOLOIDS_SCALING_SLIDER_INTERVAL = 0.5
-
 		SUBSPECIES_INTEGRATION_BASE = 25
 
 		COUNTRY_FOCUS_NEXT_TIER_ENABLING_COEFFICIENT = 0.49 # Not 0.5 for a case if there is only 2 cards in a category on a tier
@@ -700,25 +433,6 @@
 		GREAT_PATRON_RADIUS = 0.37									# Radius taken by Great Patrons on the Shroud Plane
 
 		MAX_ATTUNEMENT_VALUE = 1000 # Should be the same as @max_attunement
-		DEEDS_COUNT_PER_PATRON = 5
-		CALLINGS_REFRESH_COOLDOWN_DAYS = 360
-		CALLINGS_TIER_MIN = 1
-		CALLINGS_TIER_MAX = 3
-
-		MINOR_PATRON_ENCOUNTER_DISTANCE = 200					# Attunement range around a Minor Patron to automatically encounter it
-		MINOR_PATRON_DELVE_ENCOUNTER_CHANCE = 0.05				# Chance to encounter a Minor Patron when delving (requires major patrons of that section to be discovered)
-		FORGE_OUR_OWN_PATH_NB_ACTIVE_ACCORDS = 1				# Number of active accords that forging your own path can give you per patron
-
-		DISABLE_JUMP_DRIVE_COOLDOWN_MALUS_FLAG_STR = "disable_jump_drive_cooldown_malus"
-
-		CYCLE_END_SITUATION_FLAG_STR = "end_of_the_cycle_situation_flag"
-		CYCLE_END_RECKONING_FLAG_STR = "end_of_the_cycle_reckoning"
-
-		SHIPS_MONTHLY_DAMAGE_HEALTH_THRESHOLD = 0.2
-
-		NEWLY_SPAWNED_PSIONIC_AURA_FLAG		= "newly_spawned_psionic_aura"
-		AURA_CLASHING_FLAG					= "aura_is_clashing_against_"
-		AURA_CLASH_LOSING_INTENSITY			= 10		# Should be same value as @aura_clashing_loser_decrease
 
 		AUTOMATED_WORKFORCE_MAX_PERC = 1.0
 	}

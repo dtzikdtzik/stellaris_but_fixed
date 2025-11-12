@@ -1,8 +1,4 @@
 
-##########################
-# BLOCKED IN PARAGON DLC #
-##########################
-
 trait_ruler_corvette_focus = {
 	inline_script = {
 		script = trait/icon
