@@ -394,10 +394,6 @@
 			1500
 			3000
 		}
-		GRAND_ARCHIVE_DESTROYED = "grand_archive_destroyed"
-		TRADE_VALUE_SPECIMEN_MULT = 1.3	# Specimen Trade Value (in Energy) = Sell Value * TRADE_VALUE_SPECIMEN_MULT
-		TRADE_VALUE_SPECIMEN_COMPLETE_CATEGORY_MULT = 1.25
-		TRADE_VALUE_SPECIMEN_EMPTY_CATEGORY_MULT = 1.5
 
 		# Vivarium
 		WILD_CRITTERS_RARITY_TABLE = { 80 15 4 1 }		# Probability to find a critter of the given rarity when captured ( Common, Rare, Epic, Exceptional )
@@ -409,23 +405,10 @@
 		GRAVITY_SNARE_CAPTURE_CHANCE_PER_SCIENTIST_LEVEL = 0.1
 		RARITY_UPGRADE_COST_MULT = 0.05
 
-		SUBSPECIES_INTEGRATION_BASE = 25
-
-		COUNTRY_FOCUS_NEXT_TIER_ENABLING_COEFFICIENT = 0.49 # Not 0.5 for a case if there is only 2 cards in a category on a tier
-		COUNTRY_FOCUS_CARDS_DISMISS_UNITY_COST = 100
-		COUNTRY_FOCUS_CARDS_DISMISS_COOLDOWN_DAYS = 360
-		COUNTRY_FOCUS_PROGRESSION_DEFAULT_COST = 100
-		COUNTRY_FOCUS_PRIORITY_CHANGE_COOLDOWN_DAYS = 360
-		COUNTRY_FOCUS_COST_WAIVED_YEARS = 5 # Should match @waivedYearsDefine in 00_base_focus_categories
-
 		DEFAULT_MAX_PLANET_BUILDINGS_PER_ZONE = 3
 		DEFAULT_MAX_DISTRICTS_PER_PLANET = 4
 
-		MEGASTRUCTURE_PLACEMENT_RADIUS = 8
-		MEGASTRUCTURE_SYSTEM_CENTER_RADIUS = 0.25 # percentage of the gravity well where a megastructure can't be placed by the spawn_megastructure effect
-
 		MONTHLY_PATRON_ATTUNEMENT_VALUE_PER_ENVOY = 0.5
-		CALLING_COOLDOWN_REDUCTION_PER_ENVOY_DAYS = 0
 
 		# If you update the value below, also update @attunement_first_accord accordingly
 		CARDINAL_PATRON_PASSIVE_ACCORD_DISTANCES = { 0.3 0.6 }	# Attunement values needed (in percent) unlock passive accords of cardinal patrons
@@ -463,41 +446,6 @@
 	}
 
 	NShip = {
-		AGGRESSIVE_STANCE_INVASION_ODDS_MULT = 1.5			# Transport fleets on aggressive stance want to have combat strength of enemy ground troops x this to invade a world
-		AGGRESSIVE_STANCE_MIN_POWER_MULT	= 0.2			# Fleets that are less than our military power x this will be ignored by aggressive fleets that are bombarding
-
-
-		STRIKE_CRAFT_COMBAT_REGEN			= 0.2
-
-
-		OUT_OF_COMBAT_SHIELD_REGEN_MULT		= 5.0		# Shields recharge this much faster outside combat
-
-		OUT_OF_COMBAT_ARMOR_REGEN_MULT		= 5.0		# Armor recharge this much faster outside combat
-
-		OUT_OF_COMBAT_HULL_REGEN_MULT		= 5.0		# Hull recharge this much faster outside combat
-
-		SHIP_SPEED_SCALE					= 0.045		# Setting this to 1 makes the scripted speed value correspond to units/day
-
-		SHIP_MAX_EVASION					= 0.9		# The maximum evasion value a ship is allowed to have (percent)
-
-		MAX_DAMAGE_SCALING					= 8			# The maximum scaling value a target is allowed to have (ship size)
-
-
-		FLEET_UPGRADE_QUEUE_FACTOR_MULT		= 0.25	# Scale the importness of the number of items in the construction queue when calculating best shipyard for upgrade in.
-
-		LANDING_TIME_DAYS					= 10	# Amount of days it takes to land an army
-
-		MOVE_TO_ACTION_THRESHOLD			= 5.0	# distance threshold used by move_to fleet action to determine when the fleet arrived
-
-
-		SHIELD_RECHARGE_TICKS				= 20	# Combat ticks before a shield that is fully depleted will start to recharge
-
-		MILITARY_POWER_HEALTH_WEIGHT		= 0.5
-		MILITARY_POWER_ARMOR_WEIGHT			= 1.0	# compared to health
-		MILITARY_POWER_SHIELD_WEIGHT		= 1.0	# compared to health
-		MILITARY_POWER_DAMAGE_WEIGHT		= 0.5
-		MILITARY_POWER_SCALE				= 0.25
-		MILITARY_POWER_EXPONENT				= 0.65	# math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
 
 		# below values determine how large an effect special values such as shield penetration have on the military power of a weapon
 		MILITARY_POWER_ARMOR_PENETRATION_WEIGHT = 0.5	# larger value = adds more military power
@@ -522,13 +470,6 @@
 		SHIP_EXP_EXPERIENCED			= 100				# Amount of exp to reach experienced rank
 		SHIP_EXP_VETERAN				= 1000				# Amount of exp to reach veteran rank
 		SHIP_EXP_ELITE					= 10000				# Amount of exp to reach elite rank
-
-		CAN_TRAVEL_BETWEEN_UNEXPLORED_SYSTEMS = no		# Can move between 2 unexplored systems
-
-		SHIP_SIZE_SMALL = 1
-		SHIP_SIZE_MEDIUM = 2
-		SHIP_SIZE_LARGE = 4
-		SHIP_SIZE_EXTRA_LARGE = 8
 
 		BIOSHIP_MONTHLY_PROGRESS = 0		# default value added every month, decimal value
 
@@ -628,7 +569,6 @@
 
 		BASE_POP_DECLINE					= 5		# Base decline rate of pops
 
-		BASE_POP_ASSEMBLY					= 0		# Base assembly rate of pops
 
 		DEFAULT_CHANGE_JOB_THRESHOLD		= 10		# A job must have this much higher weight in order for a pop to switch to it from their current job
 
@@ -697,16 +637,13 @@
 		FLEET_UPGRADE_SECTION_COST_REFUND_MULT = 0.75	# Refund factor for ship section when upgrading
 		FLEET_UPGRADE_COMPONENT_COST_REFUND_MULT = 0.90 # Refund factor for ship components when upgrading
 
-		EXPANSION_COST_MAX					= 1000.0	# Maximum cost of single outpost
 		EXPANSION_COST_BASE					= 75.0		# The influence base cost of outpost
 		EXPANSION_COST_DISTANCE				= 75.0		# Added per hyperlane jump away
 
-		CLAIM_COST_MAX						= 1000.0			# Maximum cost of a single claim
 		CLAIM_COST_BASE						= 50.0				# The influence base cost of making claims
 		CLAIM_COST_STARBASE					= 25.0				# Added cost for upgraded starbase
 		CLAIM_COST_COLONY					= 50.0	#was 25		# Added cost for colonized system
 		CLAIM_COST_DISTANCE					= 25.0				# Added per hyperlane jump away
-		CLAIM_COST_MULT_OFFENSIVE_WAR		= 1.0				# Claims are ( 1 + this ) much more expensive to add for attackers in war
 		CLAIM_COST_RIVAL_DISCOUNT			= -0.10	#was -0.2	# Claims are ( 1 + this ) much less expensive against rivals
 
 		COMMERCIAL_PACTS_INCOME_PERCENTAGE = 0.1 # The amount of trade production that is being added to the pact partner's economy
@@ -727,19 +664,8 @@
 		MARKET_MAX_BASE_AMOUNTS				= 200	# Max resource base amounts that the player is allowed to trade in a single trade
 
 
-		HIGH_WATER_MARK_MONTHS				= 12	# Income high water mark is tallied over this length of time
-		HIGH_WATER_MARK_HISTORY				= 2		# Income high water mark entails this many periods (including the current)
-
 		INTERNAL_MARKET_DAYS_TO_BASE_PRICE		= 3	# MARKET_DAYS_TO_BASE_PRICE * VAL for the Internal Market
 		INTERNAL_MARKET_FLUCTUATION_MULT		= 2 # Multiplier of MARKET_FLUCTUATION_ABOVE_BASE_PRICE/MARKET_FLUCTUATION_BELOW_BASE_PRICE for Internal Market
-
-
-		SECTOR_AUTOMATION_CONTRUCTION_RAND_FACTOR = 0.1	# Random factor applied to the score of constructions in the sector automation
-		SECTOR_AUTOMATION_FREE_JOBS_BUILD_CAP = 100		# Sector automation will build if there is unemployment OR free jobs <= SECTOR_AUTOMATION_FREE_JOBS_BUILD_CAP OR free housing <= SECTOR_AUTOMATION_FREE_HOUSING_BUILD_CAP
-		SECTOR_AUTOMATION_FREE_HOUSING_BUILD_CAP = 100
-		SECTOR_AUTOMATION_BASE_FOCUS = "basic"			# Items in this sector focus list are appended to all other ones
-
-		SPACE_FAUNA_PREFERRED_PLANET_ORBIT_UPKEEP_MULT = 0.5
 
 		RARITY_MODIFIER_COMMON = 1
 		RARITY_MODIFIER_RARE = 2
@@ -751,11 +677,4 @@
 		LOGISTIC_FLEET_UPKEEP_NEUTRAL_SPACE_MULT = 1.0
 		LOGISTIC_FLEET_UPKEEP_HOSTILE_SPACE_MULT = 2.0
 
-
-		BORROW_DIPLO_WEIGHT_FAVOR_RESOURCE	= { "influence" }
-		BORROW_DIPLO_WEIGHT_FAVOR_COST		= { 10 }
-
-		POP_UNEMPLOYED_JOB_WEIGHT_BONUS = 0.001
-
-		MARKET_RESOURCE = "trade"
 	}

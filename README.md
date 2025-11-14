@@ -12,6 +12,11 @@ Remove ship cost reduction from shipclass techs
 Unlock ship sections with more slots
 Increase food upkeep for bioships and fauna
 
+# DESIGN PHILOSOPHY
+
+Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head.
+
+
 # Notable Changes
 1. Nerfed basic resource edicts and purification buildings
 2. Nerfed Arc Furnaces
@@ -21,22 +26,23 @@ Increase food upkeep for bioships and fauna
     Note that I believe all 4 are still powerful, even after the nerfs!
 
 
-### HOW IS THE ECONOMY DOWNSCALED?
-Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head.
 
 # Changelog
-### Policies
+## Policies
 - Economic Policies (Alloys vs. Consumer Goods) have impact reduced: +25/-25% > +20/-20%
-### Empire
-- Halved base Influence from power projection (2>1)
+## Empire
 - Slowed Agendas (Base Agenda Cost 7000 > 8000, 3500 > 4000 for short agendas)
+## Influence
+- Halved base Influence from power projection (2>1)
+- Claim cost from an inhabited colony +25 > +50
+- Claim discount from rivalry -20% > -10%
 ## Councilors
 - Oligarchic Ruler: Councilor Exp. +5% > +3% (always per level)
 - Dictatorial Ruler: Amenities Usage -2% > -1% 
 - Imperial Ruler: Power Projection Influence 0.25 > 0.2
 - Machine Ruler: Empire Size from Pops -3% > -2%
 - Beastmasters: Space Fauna Damage +3% > +2%
-### Planetary Designations
+## Planetary Designations
 - Nerfed production buffs for all basic resource designations (+25%>20%)
 - Trade production from urban designations: +20%>15%
 - Capitals: Stability +5 > 0 (Default Capitals still get additional amenities, housing and governing ethics attraction)
@@ -55,11 +61,10 @@ Instead of a big, specific change (the strategy of mods like the excellent _Comp
 **- Democratic: Early Agenda Activation cost +25%** !
 **- Oligarchy: Elite pop upkeep +10% SWITCH WITH AUTH ETHIC??** !
 ### Species Traits
-**- Shelled: Nerfed housing usage reduction (-75% > -40%), but added -15% army damage taken** !
+- Shelled: Housing usage reduction -75% > -40%, but added -15% army damage taken
+- Seasonal Dormancy: Civilian pop upkeep -60% > -40%
 - Thrifty: Nerfed from +25% to +20% trader jobs workforce
-**- Docile/Unruly: Reduced trait point value to +1/-1** !
-- Sedentary/Nomadic: Added -35%/+35% colonist workforce
-- Charismatic/Repugnant: Added +1/-1 Elite political power REMOVE
+- Docile/Unruly: Reduced trait point value to +1/-1
 ### Leader Traits
 - NON-Paragon: Nerfed all ship focus traits from -30% to -20% cost reduction
 #### Officials
@@ -70,15 +75,15 @@ Instead of a big, specific change (the strategy of mods like the excellent _Comp
 - Mineral Purification Hub: See above (Note: Ringworld versions still get +0.5 alloys)
 - Energy Nexus: See above
 - Ministry of Production is now Empire Unique (instead of planet unique) and grants +5% alloys/consumer goods empire-wide 
-### Megastructures
+## Megastructures
 - Arc Furnace resource station modifier progression decreased from 25/50/75/100% to 15/30/40/50% (for furnace levels 1/2/3/4)
 - Upgrading to Arc Furnace level 4 (final level) now requires Citadel Starbase tech
-- Arc Furnace now costs 150 influence
+- Arc Furnace and Dyson Swarm now cost 150 influence
 - Strategic Coordination Center grants an additional +150 fleet command limit
 - AI will build fewer or almost no Hyper Relays (performance concerns)
 ### Orbital Deposits
 - Made the highest energy/mineral/trade deposits slightly more rare (Chances for celestial bodies to spawn with 4/5+ energy, minerals or trade reduced by 25%
-### Ships
+## Ships
 - Increased Corvette, Frigate, Destroyer, Cruiser, Battleship, Titan hull section cost by 50% ~~(equates to roughly 25% increased ship cost)~~
 - Bioship hulls cost +50% (as above)
 - Space Fauna ship cost +50% (NOT component cost)
