@@ -74,7 +74,10 @@ Instead of a big, specific change (the strategy of mods like the excellent _Comp
 - Food processing center: Increased mineral cost (900>1000), halved base farmer production increase (+1 from +2), halved ringworld production increase (+1 from +2)
 - Mineral Purification Hub: See above (Note: Ringworld versions still get +0.5 alloys)
 - Energy Nexus: See above
-- Ministry of Production is now Empire Unique (instead of planet unique) and grants +5% alloys/consumer goods empire-wide 
+- Ministry of Production is now Empire Unique (instead of planet unique) and grants +5% artisan/foundry job efficiency empire-wide (instead of +15% on planet) 
+- Same for gestalt version
+- Galactic Stock Exchange: Now limited to 1 per empire
+- Commercial Megaplex:Traderupkeep -20% > -15%
 ## Megastructures
 - Arc Furnace resource station modifier progression decreased from 25/50/75/100% to 15/30/40/50% (for furnace levels 1/2/3/4)
 - Upgrading to Arc Furnace level 4 (final level) now requires Citadel Starbase tech
