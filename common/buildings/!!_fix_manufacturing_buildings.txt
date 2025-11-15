@@ -47,8 +47,8 @@ building_ministry_production = {
 #	}
 
 	country_modifier = {
-		country_consumer_goods_produces_mult = 0.05
-		country_alloys_produces_mult = 0.05
+		pop_foundry_bonus_workforce_mult = 0.05
+		pop_artisan_bonus_workforce_mult = 0.05
 	}
 
 	resources = {
@@ -115,18 +115,23 @@ building_production_center = {
 		has_major_upgraded_capital = yes
 	}
 
-	planet_modifier = {
-		planet_metallurgists_produces_mult = 0.15
+	country_modifier = {
+		pop_alloy_drone_bonus_workforce_mult = 0.05
 	}
+	#planet_modifier = {
+	#	planet_metallurgists_produces_mult = 0.15
+	#}
 
-	triggered_planet_modifier = {
+	#triggered_planet_modifier = {
+	triggered_country_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				country_uses_consumer_goods = yes
 			}
 		}
-		planet_artisans_produces_mult = 0.15
+		#planet_artisans_produces_mult = 0.15
+		pop_artisan_bonus_workforce_mult = 0.05
 	}
 
 	resources = {

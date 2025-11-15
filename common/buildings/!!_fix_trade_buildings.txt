@@ -48,7 +48,7 @@ building_commercial_megaplex = {
 	}
 
 	planet_modifier = {
-		planet_traders_upkeep_mult = -0.20
+		planet_traders_upkeep_mult = -0.15 #was -0.2
 	}
 
 	prerequisites = {
