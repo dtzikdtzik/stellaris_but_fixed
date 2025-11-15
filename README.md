@@ -12,26 +12,42 @@ Remove ship cost reduction from shipclass techs
 Unlock ship sections with more slots
 Increase food upkeep for bioships and fauna
 
-**Direct economic changes include:**
-1. Significantly weakening basic resource production modifiers by a) scaling down the +20% techs, b) decreasing the effects of the basic resource edicts and c) decreasing the effects of the purification buildings. They're still viable! In fact, I suspect they're still very powerfuL!
-2. Nerfed Arc Furnaces.
-3. Minor increase to tradition costs
-4. Nerfed Hydroponics, Solar Panels, Trade Hubs
-5. Reduced Starbase cap
-**More subtle economic downscaling includes:**
-1. Making wars more destructive to pops. Bombardment is significantly more lethal to populations. Collateral damage from armies is slightly increased. 
+# DESIGN PHILOSOPHY
 
-### HOW IS THE ECONOMY DOWNSCALED?
-Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head, while still solving or mitigating the issues.
+Instead of a big, specific change (the strategy of mods like the excellent _Compact Armadas_), I have made broad, diverse, incremental changes. The result is a mod that shouldn't feel to disruptive from vanilla and doesn't turn the balance on it's head.
+
+
+# Notable Changes
+1. Nerfed basic resource edicts and purification buildings
+2. Nerfed Arc Furnaces
+3. Nerfed Tradition/Ascension rushing (increased base tradition cost slightly)
+4. Nerfed Starbase Economy (Hydroponics, Solar Panels, Trade Hubs)
+    I felt that these 4 points were some of the worst powercreep offenders outside of specific builds. Basic resource edicts and buildings created planets that would easily outproduce Dyson Spheres, Arc Furnaces trivialised midgame alloy/mineral economy, Hydroponic Bays trivialised early game food economy unless you had bioships and enough Starbases could carry your early game economy through Trade Hubs. Also, rushing your ascension seems the dominant strategy in every build and having traditions completed long before the endgame was a norm.
+    Note that I believe all 4 are still powerful, even after the nerfs!
+
+
 
 # Changelog
-### Policies
+## Policies
 - Economic Policies (Alloys vs. Consumer Goods) have impact reduced: +25/-25% > +20/-20%
-### Empire
-- Halved base influence from power projection (2>1) 
-### Planetary Designations
+## Empire
+- Slowed Agendas (Base Agenda Cost 7000 > 8000, 3500 > 4000 for short agendas)
+## Influence
+- Halved base Influence from power projection (2>1)
+- Claim cost from an inhabited colony +25 > +50
+- Claim discount from rivalry -20% > -10%
+## Councilors
+- Oligarchic Ruler: Councilor Exp. +5% > +3% (always per level)
+- Dictatorial Ruler: Amenities Usage -2% > -1% 
+- Imperial Ruler: Power Projection Influence 0.25 > 0.2
+- Machine Ruler: Empire Size from Pops -3% > -2%
+- Beastmasters: Space Fauna Damage +3% > +2%
+## Planetary Designations
 - Nerfed production buffs for all basic resource designations (+25%>20%)
 - Trade production from urban designations: +20%>15%
+- Capitals: Stability +5 > 0 (Default Capitals still get additional amenities, housing and governing ethics attraction)
+- Habitat Farming Designation: Farmer Output +25% > +10% (symmetric with other habitat resource designations)
+- Cosmogenesis Designation: Job Output +15% > +10%
 ### Ethics
 - Authoritarians: +20%/+10% leader upkeep REVIEW
 - Egalitarian: -50%/-25% governing ethics attraction, +50%/25% ethics shift speed REVIEW
@@ -45,11 +61,10 @@ Instead of a big, specific change (the strategy of mods like the excellent _Comp
 **- Democratic: Early Agenda Activation cost +25%** !
 **- Oligarchy: Elite pop upkeep +10% SWITCH WITH AUTH ETHIC??** !
 ### Species Traits
-**- Shelled: Nerfed housing usage reduction (-75% > -40%), but added -15% army damage taken** !
+- Shelled: Housing usage reduction -75% > -40%, but added -15% army damage taken
+- Seasonal Dormancy: Civilian pop upkeep -60% > -40%
 - Thrifty: Nerfed from +25% to +20% trader jobs workforce
-**- Docile/Unruly: Reduced trait point value to +1/-1** !
-- Sedentary/Nomadic: Added -35%/+35% colonist workforce
-- Charismatic/Repugnant: Added +1/-1 Elite political power REMOVE
+- Docile/Unruly: Reduced trait point value to +1/-1
 ### Leader Traits
 - NON-Paragon: Nerfed all ship focus traits from -30% to -20% cost reduction
 #### Officials
@@ -59,16 +74,19 @@ Instead of a big, specific change (the strategy of mods like the excellent _Comp
 - Food processing center: Increased mineral cost (900>1000), halved base farmer production increase (+1 from +2), halved ringworld production increase (+1 from +2)
 - Mineral Purification Hub: See above (Note: Ringworld versions still get +0.5 alloys)
 - Energy Nexus: See above
-- Ministry of Production is now Empire Unique (instead of planet unique) and grants +5% alloys/consumer goods empire-wide 
-### Megastructures
+- Ministry of Production is now Empire Unique (instead of planet unique) and grants +5% artisan/foundry job efficiency empire-wide (instead of +15% on planet) 
+- Same for gestalt version
+- Galactic Stock Exchange: Now limited to 1 per empire
+- Commercial Megaplex:Traderupkeep -20% > -15%
+## Megastructures
 - Arc Furnace resource station modifier progression decreased from 25/50/75/100% to 15/30/40/50% (for furnace levels 1/2/3/4)
 - Upgrading to Arc Furnace level 4 (final level) now requires Citadel Starbase tech
-- Arc Furnace now costs 150 influence
+- Arc Furnace and Dyson Swarm now cost 150 influence
 - Strategic Coordination Center grants an additional +150 fleet command limit
 - AI will build fewer or almost no Hyper Relays (performance concerns)
 ### Orbital Deposits
 - Made the highest energy/mineral/trade deposits slightly more rare (Chances for celestial bodies to spawn with 4/5+ energy, minerals or trade reduced by 25%
-### Ships
+## Ships
 - Increased Corvette, Frigate, Destroyer, Cruiser, Battleship, Titan hull section cost by 50% ~~(equates to roughly 25% increased ship cost)~~
 - Bioship hulls cost +50% (as above)
 - Space Fauna ship cost +50% (NOT component cost)
@@ -109,6 +127,7 @@ IMPORTANT2: UPKEEP HAS NOT BEEN ADJUSTED (YET)
 - Finish: Station Output +25% > +15%
 ### Statecraft
 - Constitutional Focus: Agenda Speed +25% > +15%
+- Amongst Peers: Exp Reward 150 > 120 (per level) (this is a -20% nerf)
 ## Traditions (Ascension)
 ### Genetics
 - Finish: Clone Vats Upkeep -33%>25%

@@ -1,0 +1,40 @@
+
+
+councilor_beastmasters = {
+	leader_class = { commander scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = commander
+			leader_class = scientist
+		}
+	}
+	civic = civic_beastmasters
+	modifier = {
+		space_fauna_ship_speed_mult = 0.02
+		space_fauna_ship_damage_mult = 0.02 # was 0.03
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+councilor_corporate_beastmasters = {
+	leader_class = { official scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = official
+			leader_class = scientist
+		}
+	}
+	civic = civic_corporate_beastmasters
+	modifier = {
+		space_fauna_growth_rate_mult = 0.02
+		space_fauna_culling_reward_mult = 0.02 # was 0.03
+	}
+	ai_hiring_weight = {
+		inline_script = councilor_leader_weights
+	}
+}
+
+
+
